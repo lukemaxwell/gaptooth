@@ -1,0 +1,840 @@
+[2015-06-28 10:46:05,336: INFO/MainProcess] Connected to django://localhost//
+/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2015-06-28 10:46:05,347: WARNING/MainProcess] /home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2015-06-28 10:46:05,347: WARNING/MainProcess] celery@monkeytown ready.
+[2015-06-28 10:53:56,449: INFO/MainProcess] Received task: keyword_ideas.tasks.get_seed_keyword_ideas[b557e5bb-1a54-4499-8b56-2b6de88bbff0]
+[2015-06-28 10:53:56,457: WARNING/Worker-1] got client
+[2015-06-28 10:53:56,459: ERROR/MainProcess] Task keyword_ideas.tasks.get_seed_keyword_ideas[b557e5bb-1a54-4499-8b56-2b6de88bbff0] raised unexpected: FieldError(u"Cannot resolve keyword 'text' into field. Choices are: id, keyword, phrase",)
+Traceback (most recent call last):
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/app/trace.py", line 240, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/app/trace.py", line 438, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/tasks.py", line 52, in get_seed_keyword_ideas
+    #seed_keyword = SeedKeyword.objects.get(text=keyword_text)
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/django/db/models/manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/django/db/models/query.py", line 325, in get
+    clone = self.filter(*args, **kwargs)
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/django/db/models/query.py", line 679, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/django/db/models/query.py", line 697, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1304, in add_q
+    clause, require_inner = self._add_q(where_part, self.used_aliases)
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1332, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1144, in build_filter
+    lookups, parts, reffed_aggregate = self.solve_lookup_type(arg)
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1030, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1391, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+FieldError: Cannot resolve keyword 'text' into field. Choices are: id, keyword, phrase
+[2015-06-28 10:55:46,727: INFO/MainProcess] Received task: keyword_ideas.tasks.get_seed_keyword_ideas[97c73d09-e5a4-41c4-940d-8bd1582bcbbe]
+[2015-06-28 10:55:46,733: WARNING/Worker-2] got client
+[2015-06-28 10:55:46,736: ERROR/MainProcess] Task keyword_ideas.tasks.get_seed_keyword_ideas[97c73d09-e5a4-41c4-940d-8bd1582bcbbe] raised unexpected: FieldError(u"Cannot resolve keyword 'text' into field. Choices are: id, keyword, phrase",)
+Traceback (most recent call last):
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/app/trace.py", line 240, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/app/trace.py", line 438, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/tasks.py", line 52, in get_seed_keyword_ideas
+    for seed_keyword in seed_keywords:
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/django/db/models/manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/django/db/models/query.py", line 325, in get
+    clone = self.filter(*args, **kwargs)
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/django/db/models/query.py", line 679, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/django/db/models/query.py", line 697, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1304, in add_q
+    clause, require_inner = self._add_q(where_part, self.used_aliases)
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1332, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1144, in build_filter
+    lookups, parts, reffed_aggregate = self.solve_lookup_type(arg)
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1030, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1391, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+FieldError: Cannot resolve keyword 'text' into field. Choices are: id, keyword, phrase
+[2015-06-28 10:56:26,825: INFO/MainProcess] Received task: keyword_ideas.tasks.get_seed_keyword_ideas[c94d7742-c232-4d50-83ff-1b44f30257f3]
+[2015-06-28 10:56:26,833: WARNING/Worker-3] got client
+[2015-06-28 10:56:26,837: ERROR/MainProcess] Task keyword_ideas.tasks.get_seed_keyword_ideas[c94d7742-c232-4d50-83ff-1b44f30257f3] raised unexpected: FieldError(u"Cannot resolve keyword 'text' into field. Choices are: id, keyword, phrase",)
+Traceback (most recent call last):
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/app/trace.py", line 240, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/app/trace.py", line 438, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/tasks.py", line 52, in get_seed_keyword_ideas
+    for seed_keyword in seed_keywords:
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/django/db/models/manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/django/db/models/query.py", line 325, in get
+    clone = self.filter(*args, **kwargs)
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/django/db/models/query.py", line 679, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/django/db/models/query.py", line 697, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1304, in add_q
+    clause, require_inner = self._add_q(where_part, self.used_aliases)
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1332, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1144, in build_filter
+    lookups, parts, reffed_aggregate = self.solve_lookup_type(arg)
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1030, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1391, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+FieldError: Cannot resolve keyword 'text' into field. Choices are: id, keyword, phrase
+
+worker: Warm shutdown (MainProcess)
+ 
+ -------------- celery@monkeytown v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-3.13.0-53-generic-i686-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         gaptooth:0xb6f6cf8c
+- ** ---------- .> transport:   django://localhost//
+- ** ---------- .> results:     disabled
+- *** --- * --- .> concurrency: 4 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . gaptooth.celery.debug_task
+  . keyword_ideas.tasks.get_keyword_seo_metrics
+  . keyword_ideas.tasks.get_seed_keyword_ideas
+
+[2015-06-28 10:57:13,966: INFO/MainProcess] Connected to django://localhost//
+/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2015-06-28 10:57:13,976: WARNING/MainProcess] /home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2015-06-28 10:57:13,976: WARNING/MainProcess] celery@monkeytown ready.
+[2015-06-28 10:57:34,033: INFO/MainProcess] Received task: keyword_ideas.tasks.get_seed_keyword_ideas[88742073-6c41-4cd0-85e5-2191d220d3b2]
+[2015-06-28 10:57:34,037: WARNING/Worker-1] got client
+[2015-06-28 10:57:34,040: WARNING/Worker-1] Initializing adwords targetting idea service
+[2015-06-28 10:58:28,143: WARNING/Worker-1] Running query
+[2015-06-28 10:58:28,144: INFO/Worker-1] Refreshing access_token
+[2015-06-28 10:58:40,781: WARNING/Worker-1] ['electric bikes', 90500L, 5.55, 1.0, 'HIGH']
+[2015-06-28 10:58:40,783: ERROR/MainProcess] Task keyword_ideas.tasks.get_seed_keyword_ideas[88742073-6c41-4cd0-85e5-2191d220d3b2] raised unexpected: TypeError(u"'text' is an invalid keyword argument for this function",)
+Traceback (most recent call last):
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/app/trace.py", line 240, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/app/trace.py", line 438, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/tasks.py", line 61, in get_seed_keyword_ideas
+    competition = row[3],
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/django/db/models/base.py", line 480, in __init__
+    raise TypeError("'%s' is an invalid keyword argument for this function" % list(kwargs)[0])
+TypeError: 'text' is an invalid keyword argument for this function
+
+worker: Warm shutdown (MainProcess)
+ 
+ -------------- celery@monkeytown v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-3.13.0-53-generic-i686-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         gaptooth:0xb6f11f8c
+- ** ---------- .> transport:   django://localhost//
+- ** ---------- .> results:     disabled
+- *** --- * --- .> concurrency: 4 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . gaptooth.celery.debug_task
+  . keyword_ideas.tasks.get_keyword_seo_metrics
+  . keyword_ideas.tasks.get_seed_keyword_ideas
+
+[2015-06-28 11:00:23,996: INFO/MainProcess] Connected to django://localhost//
+/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2015-06-28 11:00:24,006: WARNING/MainProcess] /home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2015-06-28 11:00:24,006: WARNING/MainProcess] celery@monkeytown ready.
+[2015-06-28 11:00:59,105: INFO/MainProcess] Received task: keyword_ideas.tasks.get_seed_keyword_ideas[10a029c3-dac9-4d39-bf33-2eb604f779a2]
+[2015-06-28 11:00:59,113: WARNING/Worker-1] got client
+[2015-06-28 11:00:59,115: WARNING/Worker-1] Initializing adwords targetting idea service
+[2015-06-28 11:01:00,021: WARNING/Worker-1] Running query
+[2015-06-28 11:01:00,021: INFO/Worker-1] Refreshing access_token
+[2015-06-28 11:01:03,897: WARNING/Worker-1] ['electric bikes', 90500L, 5.55, 1.0, 'HIGH']
+[2015-06-28 11:01:03,903: WARNING/Worker-1] ['electric dirt bike', 22200L, 3.29, 0.98, 'HIGH']
+[2015-06-28 11:01:03,908: WARNING/Worker-1] ['electric mountain bike', 12100L, 4.08, 1.0, 'HIGH']
+[2015-06-28 11:01:03,916: WARNING/Worker-1] ['folding electric bike', 9900L, 4.4, 1.0, 'HIGH']
+[2015-06-28 11:01:03,932: WARNING/Worker-1] ['used electric bikes', 9900L, 3.29, 1.0, 'HIGH']
+[2015-06-28 11:01:03,949: WARNING/Worker-1] ['electric bike battery', 8100L, 4.01, 1.0, 'HIGH']
+[2015-06-28 11:01:03,965: WARNING/Worker-1] ['electric folding bike', 8100L, 4.0, 1.0, 'HIGH']
+[2015-06-28 11:01:03,971: WARNING/Worker-1] ['electric bike motor', 6600L, 5.43, 1.0, 'HIGH']
+[2015-06-28 11:01:03,979: WARNING/Worker-1] ['electric bikes for sale', 5400L, 4.97, 1.0, 'HIGH']
+[2015-06-28 11:01:03,986: WARNING/Worker-1] ['electric bikes uk', 5400L, 5.67, 1.0, 'HIGH']
+[2015-06-28 11:01:03,997: WARNING/Worker-1] ['electric bike uk', 4400L, 5.02, 1.0, 'HIGH']
+[2015-06-28 11:01:04,014: WARNING/Worker-1] ['electric quad bike', 4400L, 2.76, 1.0, 'HIGH']
+[2015-06-28 11:01:04,031: WARNING/Worker-1] ['electric bike kits', 3600L, 4.32, 1.0, 'HIGH']
+[2015-06-28 11:01:04,047: WARNING/Worker-1] ['best electric bike', 3600L, 4.33, 1.0, 'HIGH']
+[2015-06-28 11:01:04,054: WARNING/Worker-1] ['electric bike review', 3600L, 4.25, 0.99, 'HIGH']
+[2015-06-28 11:01:04,060: WARNING/Worker-1] ['electric bike for sale', 3600L, 3.46, 0.98, 'HIGH']
+[2015-06-28 11:01:04,065: WARNING/Worker-1] ['stealth electric bikes', 3600L, 4.09, 0.44, 'MEDIUM']
+[2015-06-28 11:01:04,082: WARNING/Worker-1] ['electric motor bike', 2900L, 3.93, 0.85, 'HIGH']
+[2015-06-28 11:01:04,098: WARNING/Worker-1] ['pedego electric bikes', 2900L, 5.74, 1.0, 'HIGH']
+[2015-06-28 11:01:04,114: WARNING/Worker-1] ['jetson electric bike', 2900L, 3.54, 1.0, 'HIGH']
+[2015-06-28 11:01:04,126: WARNING/Worker-1] ['electric pocket bike', 2900L, 2.65, 0.83, 'HIGH']
+[2015-06-28 11:01:04,131: WARNING/Worker-1] ['electric bike conversion', 2400L, 3.97, 1.0, 'HIGH']
+[2015-06-28 11:01:04,137: WARNING/Worker-1] ['electric bike reviews', 2400L, 4.09, 1.0, 'HIGH']
+[2015-06-28 11:01:04,143: WARNING/Worker-1] ['electric bike wheel', 2400L, 3.39, 0.99, 'HIGH']
+[2015-06-28 11:01:04,159: WARNING/Worker-1] ['electric bike parts', 2400L, 4.06, 0.98, 'HIGH']
+[2015-06-28 11:01:04,175: WARNING/Worker-1] ['kids electric bike', 2400L, 2.68, 1.0, 'HIGH']
+[2015-06-28 11:01:04,192: WARNING/Worker-1] ['a2b electric bike', 1900L, 3.45, 0.9, 'HIGH']
+[2015-06-28 11:01:04,200: WARNING/Worker-1] ['diy electric bike', 1900L, 2.95, 0.7, 'MEDIUM']
+[2015-06-28 11:01:04,206: WARNING/Worker-1] ['hero electric bike', 1900L, 1.47, 0.8, 'HIGH']
+[2015-06-28 11:01:04,212: WARNING/Worker-1] ['electric bike motors', 1600L, 5.87, 1.0, 'HIGH']
+[2015-06-28 11:01:04,218: WARNING/Worker-1] ['best electric bikes', 1600L, 4.66, 1.0, 'HIGH']
+[2015-06-28 11:01:04,235: WARNING/Worker-1] ['cheap electric bikes', 1600L, 4.76, 1.0, 'HIGH']
+[2015-06-28 11:01:04,251: WARNING/Worker-1] ['folding electric bikes', 1600L, 4.21, 1.0, 'HIGH']
+[2015-06-28 11:01:04,269: WARNING/Worker-1] ['electric bike batteries', 1600L, 3.92, 1.0, 'HIGH']
+[2015-06-28 11:01:04,277: WARNING/Worker-1] ['electrical bike', 1600L, 3.46, 0.86, 'HIGH']
+[2015-06-28 11:01:04,283: WARNING/Worker-1] ['sakura electric bike', 1600L, 3.21, 0.8, 'HIGH']
+[2015-06-28 11:01:04,288: WARNING/Worker-1] ['electric bikes reviews', 1300L, 3.79, 1.0, 'HIGH']
+[2015-06-28 11:01:04,298: WARNING/Worker-1] ['izip electric bike', 1300L, 4.39, 0.99, 'HIGH']
+[2015-06-28 11:01:04,315: WARNING/Worker-1] ['electric bike conversion kits', 1300L, 5.15, 1.0, 'HIGH']
+[2015-06-28 11:01:04,333: WARNING/Worker-1] ['cheap electric bike', 1300L, 3.75, 1.0, 'HIGH']
+[2015-06-28 11:01:04,347: WARNING/Worker-1] ['fast electric bike', 1300L, 3.79, 1.0, 'HIGH']
+[2015-06-28 11:01:04,352: WARNING/Worker-1] ['schwinn electric bike', 1300L, 2.81, 0.97, 'HIGH']
+[2015-06-28 11:01:04,358: WARNING/Worker-1] ['fastest electric bike', 1300L, 3.75, 0.89, 'HIGH']
+[2015-06-28 11:01:04,363: WARNING/Worker-1] ['electric mountain bikes', 1300L, 4.9, 1.0, 'HIGH']
+[2015-06-28 11:01:04,374: WARNING/Worker-1] ['electric push bike', 1300L, 6.02, 1.0, 'HIGH']
+[2015-06-28 11:01:04,391: WARNING/Worker-1] ['electric folding bikes', 1300L, 3.67, 1.0, 'HIGH']
+[2015-06-28 11:01:04,409: WARNING/Worker-1] ['electric bike scooter', 1300L, 4.93, 1.0, 'HIGH']
+[2015-06-28 11:01:04,425: WARNING/Worker-1] ['electric scooter bike', 1300L, 4.03, 1.0, 'HIGH']
+[2015-06-28 11:01:04,431: WARNING/Worker-1] ['used electric bike', 1300L, 2.61, 0.99, 'HIGH']
+[2015-06-28 11:01:04,437: WARNING/Worker-1] ['3 wheel electric bike', 1300L, 5.03, 0.97, 'HIGH']
+[2015-06-28 11:01:04,443: WARNING/Worker-1] ['kalkhoff electric bike', 1300L, 2.38, 0.97, 'HIGH']
+[2015-06-28 11:01:04,457: WARNING/Worker-1] ['buy electric bike', 1000L, 5.04, 1.0, 'HIGH']
+[2015-06-28 11:01:04,474: WARNING/Worker-1] ['foldable electric bike', 1000L, 3.75, 0.98, 'HIGH']
+[2015-06-28 11:01:04,490: WARNING/Worker-1] ['currie electric bike', 880L, 4.22, 0.99, 'HIGH']
+[2015-06-28 11:01:04,505: WARNING/Worker-1] ['electric bike price', 880L, 1.64, 0.99, 'HIGH']
+[2015-06-28 11:01:04,512: WARNING/Worker-1] ['electric motor for bike', 880L, 4.32, 1.0, 'HIGH']
+[2015-06-28 11:01:04,518: WARNING/Worker-1] ['stromer electric bike', 880L, 8.4, 0.9, 'HIGH']
+[2015-06-28 11:01:04,523: WARNING/Worker-1] ['electric bikes for kids', 880L, 3.53, 1.0, 'HIGH']
+[2015-06-28 11:01:04,538: WARNING/Worker-1] ['electric bikes nz', 880L, 5.4, 0.81, 'HIGH']
+[2015-06-28 11:01:04,555: WARNING/Worker-1] ['kids electric bikes', 880L, 3.1, 1.0, 'HIGH']
+[2015-06-28 11:01:04,571: WARNING/Worker-1] ['electric bikes australia', 720L, 8.91, 0.97, 'HIGH']
+[2015-06-28 11:01:04,586: WARNING/Worker-1] ['electric bike hub', 720L, 3.57, 0.89, 'HIGH']
+[2015-06-28 11:01:04,592: WARNING/Worker-1] ['used electric bikes for sale', 720L, 3.29, 1.0, 'HIGH']
+[2015-06-28 11:01:04,597: WARNING/Worker-1] ['electric road bike', 720L, 3.65, 0.87, 'HIGH']
+[2015-06-28 11:01:04,602: WARNING/Worker-1] ['electric motor bikes', 720L, 4.57, 1.0, 'HIGH']
+[2015-06-28 11:01:04,613: WARNING/Worker-1] ['pedego electric bike', 720L, 5.25, 1.0, 'HIGH']
+[2015-06-28 11:01:04,630: WARNING/Worker-1] ['second hand electric bikes', 720L, 3.46, 1.0, 'HIGH']
+[2015-06-28 11:01:04,647: WARNING/Worker-1] ['electric bikes canada', 590L, 3.69, 0.74, 'HIGH']
+[2015-06-28 11:01:04,661: WARNING/Worker-1] ['electric pedal bike', 590L, 5.08, 1.0, 'HIGH']
+[2015-06-28 11:01:04,667: WARNING/Worker-1] ['electric assist bike', 590L, 6.81, 1.0, 'HIGH']
+[2015-06-28 11:01:04,673: WARNING/Worker-1] ['electric bike folding', 590L, 3.73, 0.99, 'HIGH']
+[2015-06-28 11:01:04,679: WARNING/Worker-1] ['schwinn electric bikes', 480L, 3.07, 0.98, 'HIGH']
+[2015-06-28 11:01:04,694: WARNING/Worker-1] ['electric bike shop', 480L, 4.77, 1.0, 'HIGH']
+[2015-06-28 11:01:04,711: WARNING/Worker-1] ['fast electric bikes', 480L, 4.82, 1.0, 'HIGH']
+[2015-06-28 11:01:04,728: WARNING/Worker-1] ['best electric bike 2014', 480L, 2.9, 1.0, 'HIGH']
+[2015-06-28 11:01:04,740: WARNING/Worker-1] ['bionx electric bike', 480L, 2.64, 0.88, 'HIGH']
+[2015-06-28 11:01:04,745: WARNING/Worker-1] ['electric bikes ireland', 390L, 3.16, 0.77, 'HIGH']
+[2015-06-28 11:01:04,751: WARNING/Worker-1] ['electric bike company', 390L, 6.26, 0.7, 'MEDIUM']
+[2015-06-28 11:01:04,756: WARNING/Worker-1] ['hybrid electric bike', 390L, 5.15, 1.0, 'HIGH']
+[2015-06-28 11:01:04,773: WARNING/Worker-1] ['electric push bikes', 390L, 5.19, 1.0, 'HIGH']
+[2015-06-28 11:01:04,789: WARNING/Worker-1] ['electric bike magazine', 390L, 11.51, 0.36, 'LOW']
+[2015-06-28 11:01:04,806: WARNING/Worker-1] ['electric bike sale', 390L, 4.53, 1.0, 'HIGH']
+[2015-06-28 11:01:04,813: WARNING/Worker-1] ['electric bike australia', 390L, 7.5, 0.97, 'HIGH']
+[2015-06-28 11:01:04,821: WARNING/Worker-1] ['stealth electric bikes price', 390L, 2.75, 0.7, 'MEDIUM']
+[2015-06-28 11:01:04,827: WARNING/Worker-1] ['electric bike china', 320L, 3.2, 0.69, 'MEDIUM']
+[2015-06-28 11:01:04,836: WARNING/Worker-1] ['electric powered bikes', 320L, 5.08, 1.0, 'HIGH']
+[2015-06-28 11:01:04,853: WARNING/Worker-1] ['electric bike canada', 320L, 3.03, 0.62, 'MEDIUM']
+[2015-06-28 11:01:04,869: WARNING/Worker-1] ['cheapest electric bike', 320L, 4.76, 1.0, 'HIGH']
+[2015-06-28 11:01:04,886: WARNING/Worker-1] ['electric bike report', 320L, 5.2, 0.42, 'MEDIUM']
+[2015-06-28 11:01:04,895: WARNING/Worker-1] ['electric bike sales', 320L, 4.65, 1.0, 'HIGH']
+[2015-06-28 11:01:04,900: WARNING/Worker-1] ['electric bike insurance', 320L, 35.85, 0.87, 'HIGH']
+[2015-06-28 11:01:04,907: WARNING/Worker-1] ['electric bike engine', 260L, 3.28, 0.81, 'HIGH']
+[2015-06-28 11:01:04,918: WARNING/Worker-1] ['electric bikes kits', 210L, 4.44, 1.0, 'HIGH']
+[2015-06-28 11:01:04,935: WARNING/Worker-1] ['electric bike conversions', 210L, 4.34, 1.0, 'HIGH']
+[2015-06-28 11:01:04,951: WARNING/Worker-1] ['electric bikes scooters', 210L, 5.56, 1.0, 'HIGH']
+[2015-06-28 11:01:04,968: WARNING/Worker-1] ['electric bikes prices', 210L, 2.54, 0.99, 'HIGH']
+[2015-06-28 11:01:04,975: WARNING/Worker-1] ['electric bike reviews uk', 210L, 4.01, 0.97, 'HIGH']
+[2015-06-28 11:01:04,980: WARNING/Worker-1] ['chinese electric bike', 170L, 5.76, 0.8, 'HIGH']
+[2015-06-28 11:01:04,986: WARNING/Worker-1] ['electric bike manufacturers', 170L, 4.76, 0.77, 'HIGH']
+[2015-06-28 11:01:04,995: WARNING/Worker-1] ['electric bikes china', 140L, 3.49, 0.79, 'HIGH']
+[2015-06-28 11:01:05,011: WARNING/Worker-1] [['keyword', 'search_volume', 'average_cpc', 'competition', 'competition_class'], ['electric bikes', 90500L, 5.55, 1.0, 'HIGH'], ['electric dirt bike', 22200L, 3.29, 0.98, 'HIGH'], ['electric mountain bike', 12100L, 4.08, 1.0, 'HIGH'], ['folding electric bike', 9900L, 4.4, 1.0, 'HIGH'], ['used electric bikes', 9900L, 3.29, 1.0, 'HIGH'], ['electric bike battery', 8100L, 4.01, 1.0, 'HIGH'], ['electric folding bike', 8100L, 4.0, 1.0, 'HIGH'], ['electric bike motor', 6600L, 5.43, 1.0, 'HIGH'], ['electric bikes for sale', 5400L, 4.97, 1.0, 'HIGH'], ['electric bikes uk', 5400L, 5.67, 1.0, 'HIGH'], ['electric bike uk', 4400L, 5.02, 1.0, 'HIGH'], ['electric quad bike', 4400L, 2.76, 1.0, 'HIGH'], ['electric bike kits', 3600L, 4.32, 1.0, 'HIGH'], ['best electric bike', 3600L, 4.33, 1.0, 'HIGH'], ['electric bike review', 3600L, 4.25, 0.99, 'HIGH'], ['electric bike for sale', 3600L, 3.46, 0.98, 'HIGH'], ['stealth electric bikes', 3600L, 4.09, 0.44, 'MEDIUM'], ['electric motor bike', 2900L, 3.93, 0.85, 'HIGH'], ['pedego electric bikes', 2900L, 5.74, 1.0, 'HIGH'], ['jetson electric bike', 2900L, 3.54, 1.0, 'HIGH'], ['electric pocket bike', 2900L, 2.65, 0.83, 'HIGH'], ['electric bike conversion', 2400L, 3.97, 1.0, 'HIGH'], ['electric bike reviews', 2400L, 4.09, 1.0, 'HIGH'], ['electric bike wheel', 2400L, 3.39, 0.99, 'HIGH'], ['electric bike parts', 2400L, 4.06, 0.98, 'HIGH'], ['kids electric bike', 2400L, 2.68, 1.0, 'HIGH'], ['a2b electric bike', 1900L, 3.45, 0.9, 'HIGH'], ['diy electric bike', 1900L, 2.95, 0.7, 'MEDIUM'], ['hero electric bike', 1900L, 1.47, 0.8, 'HIGH'], ['electric bike motors', 1600L, 5.87, 1.0, 'HIGH'], ['best electric bikes', 1600L, 4.66, 1.0, 'HIGH'], ['cheap electric bikes', 1600L, 4.76, 1.0, 'HIGH'], ['folding electric bikes', 1600L, 4.21, 1.0, 'HIGH'], ['electric bike batteries', 1600L, 3.92, 1.0, 'HIGH'], ['electrical bike', 1600L, 3.46, 0.86, 'HIGH'], ['sakura electric bike', 1600L, 3.21, 0.8, 'HIGH'], ['electric bikes reviews', 1300L, 3.79, 1.0, 'HIGH'], ['izip electric bike', 1300L, 4.39, 0.99, 'HIGH'], ['electric bike conversion kits', 1300L, 5.15, 1.0, 'HIGH'], ['cheap electric bike', 1300L, 3.75, 1.0, 'HIGH'], ['fast electric bike', 1300L, 3.79, 1.0, 'HIGH'], ['schwinn electric bike', 1300L, 2.81, 0.97, 'HIGH'], ['fastest electric bike', 1300L, 3.75, 0.89, 'HIGH'], ['electric mountain bikes', 1300L, 4.9, 1.0, 'HIGH'], ['electric push bike', 1300L, 6.02, 1.0, 'HIGH'], ['electric folding bikes', 1300L, 3.67, 1.0, 'HIGH'], ['electric bike scooter', 1300L, 4.93, 1.0, 'HIGH'], ['electric scooter bike', 1300L, 4.03, 1.0, 'HIGH'], ['used electric bike', 1300L, 2.61, 0.99, 'HIGH'], ['3 wheel electric bike', 1300L, 5.03, 0.97, 'HIGH'], ['kalkhoff electric bike', 1300L, 2.38, 0.97, 'HIGH'], ['buy electric bike', 1000L, 5.04, 1.0, 'HIGH'], ['foldable electric bike', 1000L, 3.75, 0.98, 'HIGH'], ['currie electric bike', 880L, 4.22, 0.99, 'HIGH'], ['electric bike price', 880L, 1.64, 0.99, 'HIGH'], ['electric motor for bike', 880L, 4.32, 1.0, 'HIGH'], ['stromer electric bike', 880L, 8.4, 0.9, 'HIGH'], ['electric bikes for kids', 880L, 3.53, 1.0, 'HIGH'], ['electric bikes nz', 880L, 5.4, 0.81, 'HIGH'], ['kids electric bikes', 880L, 3.1, 1.0, 'HIGH'], ['electric bikes australia', 720L, 8.91, 0.97, 'HIGH'], ['electric bike hub', 720L, 3.57, 0.89, 'HIGH'], ['used electric bikes for sale', 720L, 3.29, 1.0, 'HIGH'], ['electric road bike', 720L, 3.65, 0.87, 'HIGH'], ['electric motor bikes', 720L, 4.57, 1.0, 'HIGH'], ['pedego electric bike', 720L, 5.25, 1.0, 'HIGH'], ['second hand electric bikes', 720L, 3.46, 1.0, 'HIGH'], ['electric bikes canada', 590L, 3.69, 0.74, 'HIGH'], ['electric pedal bike', 590L, 5.08, 1.0, 'HIGH'], ['electric assist bike', 590L, 6.81, 1.0, 'HIGH'], ['electric bike folding', 590L, 3.73, 0.99, 'HIGH'], ['schwinn electric bikes', 480L, 3.07, 0.98, 'HIGH'], ['electric bike shop', 480L, 4.77, 1.0, 'HIGH'], ['fast electric bikes', 480L, 4.82, 1.0, 'HIGH'], ['best electric bike 2014', 480L, 2.9, 1.0, 'HIGH'], ['bionx electric bike', 480L, 2.64, 0.88, 'HIGH'], ['electric bikes ireland', 390L, 3.16, 0.77, 'HIGH'], ['electric bike company', 390L, 6.26, 0.7, 'MEDIUM'], ['hybrid electric bike', 390L, 5.15, 1.0, 'HIGH'], ['electric push bikes', 390L, 5.19, 1.0, 'HIGH'], ['electric bike magazine', 390L, 11.51, 0.36, 'LOW'], ['electric bike sale', 390L, 4.53, 1.0, 'HIGH'], ['electric bike australia', 390L, 7.5, 0.97, 'HIGH'], ['stealth electric bikes price', 390L, 2.75, 0.7, 'MEDIUM'], ['electric bike china', 320L, 3.2, 0.69, 'MEDIUM'], ['electric powered bikes', 320L, 5.08, 1.0, 'HIGH'], ['electric bike canada', 320L, 3.03, 0.62, 'MEDIUM'], ['cheapest electric bike', 320L, 4.76, 1.0, 'HIGH'], ['electric bike report', 320L, 5.2, 0.42, 'MEDIUM'], ['electric bike sales', 320L, 4.65, 1.0, 'HIGH'], ['electric bike insurance', 320L, 35.85, 0.87, 'HIGH'], ['electric bike engine', 260L, 3.28, 0.81, 'HIGH'], ['electric bikes kits', 210L, 4.44, 1.0, 'HIGH'], ['electric bike conversions', 210L, 4.34, 1.0, 'HIGH'], ['electric bikes scooters', 210L, 5.56, 1.0, 'HIGH'], ['electric bikes prices', 210L, 2.54, 0.99, 'HIGH'], ['electric bike reviews uk', 210L, 4.01, 0.97, 'HIGH'], ['chinese electric bike', 170L, 5.76, 0.8, 'HIGH'], ['electric bike manufacturers', 170L, 4.76, 0.77, 'HIGH'], ['electric bikes china', 140L, 3.49, 0.79, 'HIGH']]
+[2015-06-28 11:01:05,012: INFO/MainProcess] Task keyword_ideas.tasks.get_seed_keyword_ideas[10a029c3-dac9-4d39-bf33-2eb604f779a2] succeeded in 5.905373557s: None
+
+worker: Warm shutdown (MainProcess)
+ 
+ -------------- celery@monkeytown v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-3.13.0-53-generic-i686-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         gaptooth:0xb6f59f8c
+- ** ---------- .> transport:   django://localhost//
+- ** ---------- .> results:     disabled
+- *** --- * --- .> concurrency: 4 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . gaptooth.celery.debug_task
+  . keyword_ideas.tasks.get_keyword_seo_metrics
+  . keyword_ideas.tasks.get_seed_keyword_ideas
+
+[2015-06-28 11:48:02,677: INFO/MainProcess] Connected to django://localhost//
+/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2015-06-28 11:48:02,689: WARNING/MainProcess] /home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2015-06-28 11:48:02,689: WARNING/MainProcess] celery@monkeytown ready.
+[2015-06-28 11:55:38,735: INFO/MainProcess] Received task: keyword_ideas.tasks.get_keyword_seo_metrics[7bb76229-835b-414f-8de8-512f5dfc2894]
+[2015-06-28 11:55:38,738: ERROR/MainProcess] Task keyword_ideas.tasks.get_keyword_seo_metrics[7bb76229-835b-414f-8de8-512f5dfc2894] raised unexpected: AttributeError("'unicode' object has no attribute 'text'",)
+Traceback (most recent call last):
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/app/trace.py", line 240, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/app/trace.py", line 438, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/tasks.py", line 15, in get_keyword_seo_metrics
+    for keyword in keywords:
+AttributeError: 'unicode' object has no attribute 'text'
+
+worker: Warm shutdown (MainProcess)
+ 
+ -------------- celery@monkeytown v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-3.13.0-53-generic-i686-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         gaptooth:0xb6f96f8c
+- ** ---------- .> transport:   django://localhost//
+- ** ---------- .> results:     disabled
+- *** --- * --- .> concurrency: 4 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . gaptooth.celery.debug_task
+  . keyword_ideas.tasks.get_keyword_seo_metrics
+  . keyword_ideas.tasks.get_seed_keyword_ideas
+
+[2015-06-28 11:56:32,833: INFO/MainProcess] Connected to django://localhost//
+/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2015-06-28 11:56:32,843: WARNING/MainProcess] /home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2015-06-28 11:56:32,844: WARNING/MainProcess] celery@monkeytown ready.
+[2015-06-28 11:56:52,898: INFO/MainProcess] Received task: keyword_ideas.tasks.get_keyword_seo_metrics[6680a766-ce4e-4148-9406-4f72e0f82485]
+[2015-06-28 11:56:52,919: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/requests/packages/urllib3/connectionpool.py:730: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.org/en/latest/security.html (This warning will only appear once by default.)
+  InsecureRequestWarning)
+
+[2015-06-28 11:56:53,269: WARNING/Worker-1] /home/pob/Documents/playground/env/local/lib/python2.7/site-packages/requests/packages/urllib3/connectionpool.py:730: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.org/en/latest/security.html (This warning will only appear once by default.)
+  InsecureRequestWarning)
+
+[2015-06-28 11:56:55,500: INFO/MainProcess] Task keyword_ideas.tasks.get_keyword_seo_metrics[6680a766-ce4e-4148-9406-4f72e0f82485] succeeded in 2.600970467s: None
+
+worker: Warm shutdown (MainProcess)
+ 
+ -------------- celery@monkeytown v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-3.13.0-53-generic-i686-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         gaptooth:0xb6eccf8c
+- ** ---------- .> transport:   django://localhost//
+- ** ---------- .> results:     disabled
+- *** --- * --- .> concurrency: 4 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . gaptooth.celery.debug_task
+  . keyword_ideas.tasks.get_keyword_seo_metrics
+  . keyword_ideas.tasks.get_seed_keyword_ideas
+
+[2015-06-28 11:58:35,351: INFO/MainProcess] Connected to django://localhost//
+/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2015-06-28 11:58:35,362: WARNING/MainProcess] /home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2015-06-28 11:58:35,362: WARNING/MainProcess] celery@monkeytown ready.
+[2015-06-28 11:58:50,400: INFO/MainProcess] Received task: keyword_ideas.tasks.get_keyword_seo_metrics[1555553a-c45a-4e3e-8eb1-d6caa0541de2]
+[2015-06-28 11:58:50,416: WARNING/Worker-1] Getting Google top 10 for electric bikes
+[2015-06-28 11:58:50,423: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/requests/packages/urllib3/connectionpool.py:730: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.org/en/latest/security.html (This warning will only appear once by default.)
+  InsecureRequestWarning)
+
+[2015-06-28 11:58:50,665: WARNING/Worker-1] /home/pob/Documents/playground/env/local/lib/python2.7/site-packages/requests/packages/urllib3/connectionpool.py:730: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.org/en/latest/security.html (This warning will only appear once by default.)
+  InsecureRequestWarning)
+
+[2015-06-28 11:58:51,898: WARNING/Worker-1] Getting SEO metrics from Moz for electric bikes
+[2015-06-28 11:58:52,530: WARNING/Worker-1] Saving keyword electric bikes
+[2015-06-28 11:59:17,555: WARNING/Worker-1] Getting Google top 10 for electric dirt bike
+[2015-06-28 11:59:17,556: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 11:59:19,170: WARNING/Worker-1] Getting SEO metrics from Moz for electric dirt bike
+[2015-06-28 11:59:20,193: WARNING/Worker-1] Saving keyword electric dirt bike
+[2015-06-28 11:59:45,223: WARNING/Worker-1] Getting Google top 10 for electric mountain bike
+[2015-06-28 11:59:45,226: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 11:59:46,819: WARNING/Worker-1] Getting SEO metrics from Moz for electric mountain bike
+[2015-06-28 11:59:47,547: WARNING/Worker-1] Saving keyword electric mountain bike
+[2015-06-28 12:00:12,584: WARNING/Worker-1] Getting Google top 10 for folding electric bike
+[2015-06-28 12:00:12,585: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:00:14,950: WARNING/Worker-1] Getting SEO metrics from Moz for folding electric bike
+[2015-06-28 12:00:21,395: WARNING/Worker-1] Saving keyword folding electric bike
+[2015-06-28 12:00:46,426: WARNING/Worker-1] Getting Google top 10 for used electric bikes
+[2015-06-28 12:00:46,428: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:00:48,637: WARNING/Worker-1] Getting SEO metrics from Moz for used electric bikes
+[2015-06-28 12:00:49,331: WARNING/Worker-1] Saving keyword used electric bikes
+[2015-06-28 12:01:14,356: WARNING/Worker-1] Getting Google top 10 for electric bike battery
+[2015-06-28 12:01:14,357: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:01:17,676: WARNING/Worker-1] Getting SEO metrics from Moz for electric bike battery
+[2015-06-28 12:01:18,565: WARNING/Worker-1] Saving keyword electric bike battery
+[2015-06-28 12:01:43,596: WARNING/Worker-1] Getting Google top 10 for electric folding bike
+[2015-06-28 12:01:43,597: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:01:45,753: WARNING/Worker-1] Getting SEO metrics from Moz for electric folding bike
+[2015-06-28 12:01:46,803: WARNING/Worker-1] Saving keyword electric folding bike
+[2015-06-28 12:02:11,832: WARNING/Worker-1] Getting Google top 10 for electric bike motor
+[2015-06-28 12:02:11,835: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:02:14,383: WARNING/Worker-1] Getting SEO metrics from Moz for electric bike motor
+[2015-06-28 12:02:15,110: WARNING/Worker-1] Saving keyword electric bike motor
+[2015-06-28 12:02:40,146: WARNING/Worker-1] Getting Google top 10 for electric bikes for sale
+[2015-06-28 12:02:40,149: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:02:42,598: WARNING/Worker-1] Getting SEO metrics from Moz for electric bikes for sale
+[2015-06-28 12:02:43,357: WARNING/Worker-1] Saving keyword electric bikes for sale
+[2015-06-28 12:03:08,373: WARNING/Worker-1] Getting Google top 10 for electric bikes uk
+[2015-06-28 12:03:08,376: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:03:10,687: WARNING/Worker-1] Getting SEO metrics from Moz for electric bikes uk
+[2015-06-28 12:03:11,634: WARNING/Worker-1] Saving keyword electric bikes uk
+[2015-06-28 12:03:36,666: WARNING/Worker-1] Getting Google top 10 for electric bike uk
+[2015-06-28 12:03:36,668: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:03:39,187: WARNING/Worker-1] Getting SEO metrics from Moz for electric bike uk
+[2015-06-28 12:03:45,780: WARNING/Worker-1] Saving keyword electric bike uk
+[2015-06-28 12:04:10,792: WARNING/Worker-1] Getting Google top 10 for electric quad bike
+[2015-06-28 12:04:10,795: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:04:12,681: WARNING/Worker-1] Getting SEO metrics from Moz for electric quad bike
+[2015-06-28 12:04:13,750: WARNING/Worker-1] Saving keyword electric quad bike
+[2015-06-28 12:04:38,794: WARNING/Worker-1] Getting Google top 10 for electric bike kits
+[2015-06-28 12:04:38,797: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:04:40,726: WARNING/Worker-1] Getting SEO metrics from Moz for electric bike kits
+[2015-06-28 12:04:41,688: WARNING/Worker-1] Saving keyword electric bike kits
+[2015-06-28 12:05:06,731: WARNING/Worker-1] Getting Google top 10 for best electric bike
+[2015-06-28 12:05:06,734: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:05:08,057: WARNING/Worker-1] Getting SEO metrics from Moz for best electric bike
+[2015-06-28 12:05:08,736: WARNING/Worker-1] Saving keyword best electric bike
+[2015-06-28 12:05:33,771: WARNING/Worker-1] Getting Google top 10 for electric bike review
+[2015-06-28 12:05:33,774: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:05:35,674: WARNING/Worker-1] Getting SEO metrics from Moz for electric bike review
+[2015-06-28 12:05:36,795: WARNING/Worker-1] Saving keyword electric bike review
+[2015-06-28 12:06:01,824: WARNING/Worker-1] Getting Google top 10 for electric bike for sale
+[2015-06-28 12:06:01,826: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:06:04,234: WARNING/Worker-1] Getting SEO metrics from Moz for electric bike for sale
+[2015-06-28 12:06:04,987: WARNING/Worker-1] Saving keyword electric bike for sale
+[2015-06-28 12:06:30,017: WARNING/Worker-1] Getting Google top 10 for stealth electric bikes
+[2015-06-28 12:06:30,018: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:06:31,231: WARNING/Worker-1] Getting SEO metrics from Moz for stealth electric bikes
+[2015-06-28 12:06:32,297: WARNING/Worker-1] Saving keyword stealth electric bikes
+[2015-06-28 12:06:57,314: WARNING/Worker-1] Getting Google top 10 for electric motor bike
+[2015-06-28 12:06:57,315: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:06:58,915: WARNING/Worker-1] Getting SEO metrics from Moz for electric motor bike
+[2015-06-28 12:06:59,945: WARNING/Worker-1] Saving keyword electric motor bike
+[2015-06-28 12:07:24,975: WARNING/Worker-1] Getting Google top 10 for pedego electric bikes
+[2015-06-28 12:07:24,977: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:07:26,235: WARNING/Worker-1] Getting SEO metrics from Moz for pedego electric bikes
+[2015-06-28 12:07:26,983: WARNING/Worker-1] Saving keyword pedego electric bikes
+[2015-06-28 12:07:52,014: WARNING/Worker-1] Getting Google top 10 for jetson electric bike
+[2015-06-28 12:07:52,016: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:07:53,549: WARNING/Worker-1] Getting SEO metrics from Moz for jetson electric bike
+[2015-06-28 12:07:54,319: WARNING/Worker-1] Saving keyword jetson electric bike
+[2015-06-28 12:08:19,352: WARNING/Worker-1] Getting Google top 10 for electric pocket bike
+[2015-06-28 12:08:19,355: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:08:20,947: WARNING/Worker-1] Getting SEO metrics from Moz for electric pocket bike
+[2015-06-28 12:08:21,968: WARNING/Worker-1] Saving keyword electric pocket bike
+[2015-06-28 12:08:46,999: WARNING/Worker-1] Getting Google top 10 for electric bike conversion
+[2015-06-28 12:08:47,002: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:08:48,296: WARNING/Worker-1] Getting SEO metrics from Moz for electric bike conversion
+[2015-06-28 12:08:49,311: WARNING/Worker-1] Saving keyword electric bike conversion
+[2015-06-28 12:09:14,340: WARNING/Worker-1] Getting Google top 10 for electric bike reviews
+[2015-06-28 12:09:14,341: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:09:16,061: WARNING/Worker-1] Getting SEO metrics from Moz for electric bike reviews
+[2015-06-28 12:09:16,960: WARNING/Worker-1] Saving keyword electric bike reviews
+[2015-06-28 12:09:41,999: WARNING/Worker-1] Getting Google top 10 for electric bike wheel
+[2015-06-28 12:09:42,000: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:09:44,234: WARNING/Worker-1] Getting SEO metrics from Moz for electric bike wheel
+[2015-06-28 12:09:45,225: WARNING/Worker-1] Saving keyword electric bike wheel
+[2015-06-28 12:10:10,258: WARNING/Worker-1] Getting Google top 10 for electric bike parts
+[2015-06-28 12:10:10,260: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:10:11,973: WARNING/Worker-1] Getting SEO metrics from Moz for electric bike parts
+[2015-06-28 12:10:12,901: WARNING/Worker-1] Saving keyword electric bike parts
+[2015-06-28 12:10:37,927: WARNING/Worker-1] Getting Google top 10 for kids electric bike
+[2015-06-28 12:10:37,928: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:10:39,347: WARNING/Worker-1] Getting SEO metrics from Moz for kids electric bike
+[2015-06-28 12:10:39,936: WARNING/Worker-1] Saving keyword kids electric bike
+[2015-06-28 12:11:04,956: WARNING/Worker-1] Getting Google top 10 for a2b electric bike
+[2015-06-28 12:11:04,959: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:11:07,739: WARNING/Worker-1] Getting SEO metrics from Moz for a2b electric bike
+[2015-06-28 12:11:08,503: WARNING/Worker-1] Saving keyword a2b electric bike
+[2015-06-28 12:11:33,534: WARNING/Worker-1] Getting Google top 10 for diy electric bike
+[2015-06-28 12:11:33,535: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:11:34,969: WARNING/Worker-1] Getting SEO metrics from Moz for diy electric bike
+[2015-06-28 12:11:36,133: WARNING/Worker-1] Saving keyword diy electric bike
+[2015-06-28 12:12:01,164: WARNING/Worker-1] Getting Google top 10 for hero electric bike
+[2015-06-28 12:12:01,166: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:12:02,800: WARNING/Worker-1] Getting SEO metrics from Moz for hero electric bike
+[2015-06-28 12:12:03,768: WARNING/Worker-1] Saving keyword hero electric bike
+[2015-06-28 12:12:28,809: WARNING/Worker-1] Getting Google top 10 for electric bike motors
+[2015-06-28 12:12:28,812: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:12:30,620: WARNING/Worker-1] Getting SEO metrics from Moz for electric bike motors
+[2015-06-28 12:12:31,418: WARNING/Worker-1] Saving keyword electric bike motors
+[2015-06-28 12:12:56,428: WARNING/Worker-1] Getting Google top 10 for best electric bikes
+[2015-06-28 12:12:56,431: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:12:58,091: WARNING/Worker-1] Getting SEO metrics from Moz for best electric bikes
+[2015-06-28 12:12:58,976: WARNING/Worker-1] Saving keyword best electric bikes
+[2015-06-28 12:13:24,008: WARNING/Worker-1] Getting Google top 10 for cheap electric bikes
+[2015-06-28 12:13:24,011: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:13:25,741: WARNING/Worker-1] Getting SEO metrics from Moz for cheap electric bikes
+[2015-06-28 12:13:26,449: WARNING/Worker-1] Saving keyword cheap electric bikes
+[2015-06-28 12:13:51,485: WARNING/Worker-1] Getting Google top 10 for folding electric bikes
+[2015-06-28 12:13:51,488: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:13:54,443: WARNING/Worker-1] Getting SEO metrics from Moz for folding electric bikes
+[2015-06-28 12:13:55,313: WARNING/Worker-1] Saving keyword folding electric bikes
+[2015-06-28 12:14:20,344: WARNING/Worker-1] Getting Google top 10 for electric bike batteries
+[2015-06-28 12:14:20,347: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:14:22,621: WARNING/Worker-1] Getting SEO metrics from Moz for electric bike batteries
+[2015-06-28 12:14:23,554: WARNING/Worker-1] Saving keyword electric bike batteries
+[2015-06-28 12:14:48,598: WARNING/Worker-1] Getting Google top 10 for electrical bike
+[2015-06-28 12:14:48,599: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:14:50,902: WARNING/Worker-1] Getting SEO metrics from Moz for electrical bike
+[2015-06-28 12:14:52,234: WARNING/Worker-1] Saving keyword electrical bike
+[2015-06-28 12:15:17,278: WARNING/Worker-1] Getting Google top 10 for sakura electric bike
+[2015-06-28 12:15:17,281: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:15:20,087: WARNING/Worker-1] Getting SEO metrics from Moz for sakura electric bike
+[2015-06-28 12:15:20,674: WARNING/Worker-1] Saving keyword sakura electric bike
+[2015-06-28 12:15:45,711: WARNING/Worker-1] Getting Google top 10 for electric bikes reviews
+[2015-06-28 12:15:45,712: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:15:47,807: WARNING/Worker-1] Getting SEO metrics from Moz for electric bikes reviews
+[2015-06-28 12:15:48,582: WARNING/Worker-1] Saving keyword electric bikes reviews
+[2015-06-28 12:16:13,604: WARNING/Worker-1] Getting Google top 10 for izip electric bike
+[2015-06-28 12:16:13,607: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:16:15,826: WARNING/Worker-1] Getting SEO metrics from Moz for izip electric bike
+[2015-06-28 12:16:16,742: WARNING/Worker-1] Saving keyword izip electric bike
+[2015-06-28 12:16:41,755: WARNING/Worker-1] Getting Google top 10 for electric bike conversion kits
+[2015-06-28 12:16:41,756: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:16:44,030: WARNING/Worker-1] Getting SEO metrics from Moz for electric bike conversion kits
+[2015-06-28 12:16:44,792: WARNING/Worker-1] Saving keyword electric bike conversion kits
+[2015-06-28 12:17:09,823: WARNING/Worker-1] Getting Google top 10 for cheap electric bike
+[2015-06-28 12:17:09,825: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:17:11,925: WARNING/Worker-1] Getting SEO metrics from Moz for cheap electric bike
+[2015-06-28 12:17:12,948: WARNING/Worker-1] Saving keyword cheap electric bike
+[2015-06-28 12:17:37,992: WARNING/Worker-1] Getting Google top 10 for fast electric bike
+[2015-06-28 12:17:37,995: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:17:40,259: WARNING/Worker-1] Getting SEO metrics from Moz for fast electric bike
+[2015-06-28 12:17:41,218: WARNING/Worker-1] Saving keyword fast electric bike
+[2015-06-28 12:18:06,252: WARNING/Worker-1] Getting Google top 10 for schwinn electric bike
+[2015-06-28 12:18:06,255: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:18:08,970: WARNING/Worker-1] Getting SEO metrics from Moz for schwinn electric bike
+[2015-06-28 12:18:09,787: WARNING/Worker-1] Saving keyword schwinn electric bike
+[2015-06-28 12:18:34,817: WARNING/Worker-1] Getting Google top 10 for fastest electric bike
+[2015-06-28 12:18:34,818: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:18:37,724: WARNING/Worker-1] Getting SEO metrics from Moz for fastest electric bike
+[2015-06-28 12:18:38,523: WARNING/Worker-1] Saving keyword fastest electric bike
+[2015-06-28 12:19:03,553: WARNING/Worker-1] Getting Google top 10 for electric mountain bikes
+[2015-06-28 12:19:03,556: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:19:04,880: WARNING/Worker-1] Getting SEO metrics from Moz for electric mountain bikes
+[2015-06-28 12:19:05,657: WARNING/Worker-1] Saving keyword electric mountain bikes
+[2015-06-28 12:19:30,688: WARNING/Worker-1] Getting Google top 10 for electric push bike
+[2015-06-28 12:19:30,691: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:19:32,577: WARNING/Worker-1] Getting SEO metrics from Moz for electric push bike
+[2015-06-28 12:19:33,441: WARNING/Worker-1] Saving keyword electric push bike
+[2015-06-28 12:19:58,483: WARNING/Worker-1] Getting Google top 10 for electric folding bikes
+[2015-06-28 12:19:58,485: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:20:02,058: WARNING/Worker-1] Getting SEO metrics from Moz for electric folding bikes
+[2015-06-28 12:20:02,837: WARNING/Worker-1] Saving keyword electric folding bikes
+[2015-06-28 12:20:27,881: WARNING/Worker-1] Getting Google top 10 for electric bike scooter
+[2015-06-28 12:20:27,882: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:20:30,780: WARNING/Worker-1] Getting SEO metrics from Moz for electric bike scooter
+[2015-06-28 12:20:31,595: WARNING/Worker-1] Saving keyword electric bike scooter
+[2015-06-28 12:20:56,632: WARNING/Worker-1] Getting Google top 10 for electric scooter bike
+[2015-06-28 12:20:56,635: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:20:58,598: WARNING/Worker-1] Getting SEO metrics from Moz for electric scooter bike
+[2015-06-28 12:20:59,385: WARNING/Worker-1] Saving keyword electric scooter bike
+[2015-06-28 12:21:24,403: WARNING/Worker-1] Getting Google top 10 for used electric bike
+[2015-06-28 12:21:24,405: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:21:26,966: WARNING/Worker-1] Getting SEO metrics from Moz for used electric bike
+[2015-06-28 12:21:27,818: WARNING/Worker-1] Saving keyword used electric bike
+[2015-06-28 12:21:52,845: WARNING/Worker-1] Getting Google top 10 for 3 wheel electric bike
+[2015-06-28 12:21:52,847: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:21:54,751: WARNING/Worker-1] Getting SEO metrics from Moz for 3 wheel electric bike
+[2015-06-28 12:21:55,503: WARNING/Worker-1] Saving keyword 3 wheel electric bike
+[2015-06-28 12:22:20,532: WARNING/Worker-1] Getting Google top 10 for kalkhoff electric bike
+[2015-06-28 12:22:20,535: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:22:22,005: WARNING/Worker-1] Getting SEO metrics from Moz for kalkhoff electric bike
+[2015-06-28 12:22:22,780: WARNING/Worker-1] Saving keyword kalkhoff electric bike
+[2015-06-28 12:22:47,815: WARNING/Worker-1] Getting Google top 10 for buy electric bike
+[2015-06-28 12:22:47,817: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:22:48,798: WARNING/Worker-1] Getting SEO metrics from Moz for buy electric bike
+[2015-06-28 12:22:49,812: WARNING/Worker-1] Saving keyword buy electric bike
+[2015-06-28 12:23:14,843: WARNING/Worker-1] Getting Google top 10 for foldable electric bike
+[2015-06-28 12:23:14,846: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:23:16,198: WARNING/Worker-1] Getting SEO metrics from Moz for foldable electric bike
+[2015-06-28 12:23:18,997: WARNING/Worker-1] Saving keyword foldable electric bike
+[2015-06-28 12:23:44,030: WARNING/Worker-1] Getting Google top 10 for currie electric bike
+[2015-06-28 12:23:44,031: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/bs4/__init__.py:189: UserWarning: "http://www.amazon.com/dp/B00331H6DC/?tag=dailymotion100-20." looks like a URL. Beautiful Soup is not an HTTP client. You should probably use an HTTP client to get the document behind the URL, and feed that document to Beautiful Soup.
+  '"%s" looks like a URL. Beautiful Soup is not an HTTP client. You should probably use an HTTP client to get the document behind the URL, and feed that document to Beautiful Soup.' % markup)
+
+[2015-06-28 12:23:45,317: WARNING/Worker-1] /home/pob/Documents/playground/env/local/lib/python2.7/site-packages/bs4/__init__.py:189: UserWarning: "http://www.amazon.com/dp/B00331H6DC/?tag=dailymotion100-20." looks like a URL. Beautiful Soup is not an HTTP client. You should probably use an HTTP client to get the document behind the URL, and feed that document to Beautiful Soup.
+  '"%s" looks like a URL. Beautiful Soup is not an HTTP client. You should probably use an HTTP client to get the document behind the URL, and feed that document to Beautiful Soup.' % markup)
+
+[2015-06-28 12:23:45,336: WARNING/Worker-1] Getting SEO metrics from Moz for currie electric bike
+[2015-06-28 12:23:46,032: WARNING/Worker-1] Saving keyword currie electric bike
+[2015-06-28 12:24:11,076: WARNING/Worker-1] Getting Google top 10 for electric bike price
+[2015-06-28 12:24:11,078: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:24:12,672: WARNING/Worker-1] Getting SEO metrics from Moz for electric bike price
+[2015-06-28 12:24:13,183: WARNING/Worker-1] Saving keyword electric bike price
+[2015-06-28 12:24:38,213: WARNING/Worker-1] Getting Google top 10 for electric motor for bike
+[2015-06-28 12:24:38,216: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:24:39,285: WARNING/Worker-1] Getting SEO metrics from Moz for electric motor for bike
+[2015-06-28 12:24:40,101: WARNING/Worker-1] Saving keyword electric motor for bike
+[2015-06-28 12:25:05,129: WARNING/Worker-1] Getting Google top 10 for stromer electric bike
+[2015-06-28 12:25:05,130: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:25:06,370: WARNING/Worker-1] Getting SEO metrics from Moz for stromer electric bike
+[2015-06-28 12:25:07,131: WARNING/Worker-1] Saving keyword stromer electric bike
+[2015-06-28 12:25:32,149: WARNING/Worker-1] Getting Google top 10 for electric bikes for kids
+[2015-06-28 12:25:32,152: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:25:33,454: WARNING/Worker-1] Getting SEO metrics from Moz for electric bikes for kids
+[2015-06-28 12:25:34,166: WARNING/Worker-1] Saving keyword electric bikes for kids
+[2015-06-28 12:25:59,197: WARNING/Worker-1] Getting Google top 10 for electric bikes nz
+[2015-06-28 12:25:59,200: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:26:00,957: WARNING/Worker-1] Getting SEO metrics from Moz for electric bikes nz
+[2015-06-28 12:26:01,916: WARNING/Worker-1] Saving keyword electric bikes nz
+[2015-06-28 12:26:26,952: WARNING/Worker-1] Getting Google top 10 for kids electric bikes
+[2015-06-28 12:26:26,955: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:26:29,887: WARNING/Worker-1] Getting SEO metrics from Moz for kids electric bikes
+[2015-06-28 12:26:30,415: WARNING/Worker-1] Saving keyword kids electric bikes
+[2015-06-28 12:26:55,455: WARNING/Worker-1] Getting Google top 10 for electric bikes australia
+[2015-06-28 12:26:55,456: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:26:57,254: WARNING/Worker-1] Getting SEO metrics from Moz for electric bikes australia
+[2015-06-28 12:26:58,389: WARNING/Worker-1] Saving keyword electric bikes australia
+[2015-06-28 12:27:23,409: WARNING/Worker-1] Getting Google top 10 for electric bike hub
+[2015-06-28 12:27:23,412: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:27:25,958: WARNING/Worker-1] Getting SEO metrics from Moz for electric bike hub
+[2015-06-28 12:27:26,913: WARNING/Worker-1] Saving keyword electric bike hub
+[2015-06-28 12:27:51,944: WARNING/Worker-1] Getting Google top 10 for used electric bikes for sale
+[2015-06-28 12:27:51,947: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:27:54,241: WARNING/Worker-1] Getting SEO metrics from Moz for used electric bikes for sale
+[2015-06-28 12:27:54,866: WARNING/Worker-1] Saving keyword used electric bikes for sale
+[2015-06-28 12:28:19,901: WARNING/Worker-1] Getting Google top 10 for electric road bike
+[2015-06-28 12:28:19,902: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:28:23,045: WARNING/Worker-1] Getting SEO metrics from Moz for electric road bike
+[2015-06-28 12:28:23,870: WARNING/Worker-1] Saving keyword electric road bike
+[2015-06-28 12:28:48,894: WARNING/Worker-1] Getting Google top 10 for electric motor bikes
+[2015-06-28 12:28:48,897: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:28:51,273: WARNING/Worker-1] Getting SEO metrics from Moz for electric motor bikes
+[2015-06-28 12:28:52,031: WARNING/Worker-1] Saving keyword electric motor bikes
+[2015-06-28 12:29:17,064: WARNING/Worker-1] Getting Google top 10 for pedego electric bike
+[2015-06-28 12:29:17,067: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:29:18,800: WARNING/Worker-1] Getting SEO metrics from Moz for pedego electric bike
+[2015-06-28 12:29:19,782: WARNING/Worker-1] Saving keyword pedego electric bike
+[2015-06-28 12:29:44,827: WARNING/Worker-1] Getting Google top 10 for second hand electric bikes
+[2015-06-28 12:29:44,830: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:29:48,443: WARNING/Worker-1] Getting SEO metrics from Moz for second hand electric bikes
+[2015-06-28 12:29:50,464: WARNING/Worker-1] Saving keyword second hand electric bikes
+[2015-06-28 12:30:15,482: WARNING/Worker-1] Getting Google top 10 for electric bikes canada
+[2015-06-28 12:30:15,485: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:30:17,015: WARNING/Worker-1] Getting SEO metrics from Moz for electric bikes canada
+[2015-06-28 12:30:18,051: WARNING/Worker-1] Saving keyword electric bikes canada
+[2015-06-28 12:30:43,078: WARNING/Worker-1] Getting Google top 10 for electric pedal bike
+[2015-06-28 12:30:43,081: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:30:44,582: WARNING/Worker-1] Getting SEO metrics from Moz for electric pedal bike
+[2015-06-28 12:30:45,205: WARNING/Worker-1] Saving keyword electric pedal bike
+[2015-06-28 12:31:10,223: WARNING/Worker-1] Getting Google top 10 for electric assist bike
+[2015-06-28 12:31:10,226: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:31:13,257: WARNING/Worker-1] Getting SEO metrics from Moz for electric assist bike
+[2015-06-28 12:31:13,964: WARNING/Worker-1] Saving keyword electric assist bike
+[2015-06-28 12:31:38,985: WARNING/Worker-1] Getting Google top 10 for electric bike folding
+[2015-06-28 12:31:38,988: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:31:40,464: WARNING/Worker-1] Getting SEO metrics from Moz for electric bike folding
+[2015-06-28 12:31:41,144: WARNING/Worker-1] Saving keyword electric bike folding
+[2015-06-28 12:32:06,156: WARNING/Worker-1] Getting Google top 10 for schwinn electric bikes
+[2015-06-28 12:32:06,158: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:32:08,732: WARNING/Worker-1] Getting SEO metrics from Moz for schwinn electric bikes
+[2015-06-28 12:32:09,665: WARNING/Worker-1] Saving keyword schwinn electric bikes
+[2015-06-28 12:32:34,697: WARNING/Worker-1] Getting Google top 10 for electric bike shop
+[2015-06-28 12:32:34,698: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:32:36,478: WARNING/Worker-1] Getting SEO metrics from Moz for electric bike shop
+[2015-06-28 12:32:37,285: WARNING/Worker-1] Saving keyword electric bike shop
+[2015-06-28 12:33:02,316: WARNING/Worker-1] Getting Google top 10 for fast electric bikes
+[2015-06-28 12:33:02,319: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:33:03,635: WARNING/Worker-1] Getting SEO metrics from Moz for fast electric bikes
+[2015-06-28 12:33:04,318: WARNING/Worker-1] Saving keyword fast electric bikes
+[2015-06-28 12:33:29,350: WARNING/Worker-1] Getting Google top 10 for best electric bike 2014
+[2015-06-28 12:33:29,353: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:33:30,616: WARNING/Worker-1] Getting SEO metrics from Moz for best electric bike 2014
+[2015-06-28 12:33:31,352: WARNING/Worker-1] Saving keyword best electric bike 2014
+[2015-06-28 12:33:56,369: WARNING/Worker-1] Getting Google top 10 for bionx electric bike
+[2015-06-28 12:33:56,371: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:34:06,226: WARNING/Worker-1] Getting SEO metrics from Moz for bionx electric bike
+[2015-06-28 12:34:07,383: WARNING/Worker-1] Saving keyword bionx electric bike
+[2015-06-28 12:34:32,413: WARNING/Worker-1] Getting Google top 10 for electric bikes ireland
+[2015-06-28 12:34:32,416: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:34:34,124: WARNING/Worker-1] Getting SEO metrics from Moz for electric bikes ireland
+[2015-06-28 12:34:35,343: WARNING/Worker-1] Saving keyword electric bikes ireland
+[2015-06-28 12:35:00,387: WARNING/Worker-1] Getting Google top 10 for electric bike company
+[2015-06-28 12:35:00,388: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:35:01,833: WARNING/Worker-1] Getting SEO metrics from Moz for electric bike company
+[2015-06-28 12:35:02,543: WARNING/Worker-1] Saving keyword electric bike company
+[2015-06-28 12:35:27,573: WARNING/Worker-1] Getting Google top 10 for hybrid electric bike
+[2015-06-28 12:35:27,575: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:35:29,083: WARNING/Worker-1] Getting SEO metrics from Moz for hybrid electric bike
+[2015-06-28 12:35:30,327: WARNING/Worker-1] Saving keyword hybrid electric bike
+[2015-06-28 12:35:55,372: WARNING/Worker-1] Getting Google top 10 for electric push bikes
+[2015-06-28 12:35:55,373: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:35:56,627: WARNING/Worker-1] Getting SEO metrics from Moz for electric push bikes
+[2015-06-28 12:35:57,785: WARNING/Worker-1] Saving keyword electric push bikes
+[2015-06-28 12:36:22,830: WARNING/Worker-1] Getting Google top 10 for electric bike magazine
+[2015-06-28 12:36:22,834: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:36:24,987: WARNING/Worker-1] Getting SEO metrics from Moz for electric bike magazine
+[2015-06-28 12:36:26,152: WARNING/Worker-1] Saving keyword electric bike magazine
+[2015-06-28 12:36:51,164: WARNING/Worker-1] Getting Google top 10 for electric bike sale
+[2015-06-28 12:36:51,166: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:36:52,452: WARNING/Worker-1] Getting SEO metrics from Moz for electric bike sale
+[2015-06-28 12:36:54,190: WARNING/Worker-1] Saving keyword electric bike sale
+[2015-06-28 12:37:19,221: WARNING/Worker-1] Getting Google top 10 for electric bike australia
+[2015-06-28 12:37:19,223: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:37:20,410: WARNING/Worker-1] Getting SEO metrics from Moz for electric bike australia
+[2015-06-28 12:37:21,343: WARNING/Worker-1] Saving keyword electric bike australia
+[2015-06-28 12:37:46,372: WARNING/Worker-1] Getting Google top 10 for stealth electric bikes price
+[2015-06-28 12:37:46,374: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:37:48,719: WARNING/Worker-1] Getting SEO metrics from Moz for stealth electric bikes price
+[2015-06-28 12:37:49,670: WARNING/Worker-1] Saving keyword stealth electric bikes price
+[2015-06-28 12:38:14,701: WARNING/Worker-1] Getting Google top 10 for electric bike china
+[2015-06-28 12:38:14,703: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:38:16,166: WARNING/Worker-1] Getting SEO metrics from Moz for electric bike china
+[2015-06-28 12:38:17,357: WARNING/Worker-1] Saving keyword electric bike china
+[2015-06-28 12:38:42,392: WARNING/Worker-1] Getting Google top 10 for electric powered bikes
+[2015-06-28 12:38:42,394: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:38:44,016: WARNING/Worker-1] Getting SEO metrics from Moz for electric powered bikes
+[2015-06-28 12:38:45,039: WARNING/Worker-1] Saving keyword electric powered bikes
+[2015-06-28 12:39:10,049: WARNING/Worker-1] Getting Google top 10 for electric bike canada
+[2015-06-28 12:39:10,052: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:39:11,783: WARNING/Worker-1] Getting SEO metrics from Moz for electric bike canada
+[2015-06-28 12:39:13,012: WARNING/Worker-1] Saving keyword electric bike canada
+[2015-06-28 12:39:38,044: WARNING/Worker-1] Getting Google top 10 for cheapest electric bike
+[2015-06-28 12:39:38,045: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:39:40,008: WARNING/Worker-1] Getting SEO metrics from Moz for cheapest electric bike
+[2015-06-28 12:39:40,712: WARNING/Worker-1] Saving keyword cheapest electric bike
+[2015-06-28 12:40:05,742: WARNING/Worker-1] Getting Google top 10 for electric bike report
+[2015-06-28 12:40:05,744: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:40:07,318: WARNING/Worker-1] Getting SEO metrics from Moz for electric bike report
+[2015-06-28 12:40:08,259: WARNING/Worker-1] Saving keyword electric bike report
+[2015-06-28 12:40:33,282: WARNING/Worker-1] Getting Google top 10 for electric bike sales
+[2015-06-28 12:40:33,285: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:40:36,550: WARNING/Worker-1] Getting SEO metrics from Moz for electric bike sales
+[2015-06-28 12:40:37,165: WARNING/Worker-1] Saving keyword electric bike sales
+[2015-06-28 12:41:02,188: WARNING/Worker-1] Getting Google top 10 for electric bike insurance
+[2015-06-28 12:41:02,191: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:41:03,920: WARNING/Worker-1] Getting SEO metrics from Moz for electric bike insurance
+[2015-06-28 12:41:05,092: WARNING/Worker-1] Saving keyword electric bike insurance
+[2015-06-28 12:41:30,127: WARNING/Worker-1] Getting Google top 10 for electric bike engine
+[2015-06-28 12:41:30,129: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:41:33,116: WARNING/Worker-1] Getting SEO metrics from Moz for electric bike engine
+[2015-06-28 12:41:33,764: WARNING/Worker-1] Saving keyword electric bike engine
+[2015-06-28 12:41:58,804: WARNING/Worker-1] Getting Google top 10 for electric bikes kits
+[2015-06-28 12:41:58,805: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:42:00,138: WARNING/Worker-1] Getting SEO metrics from Moz for electric bikes kits
+[2015-06-28 12:42:01,005: WARNING/Worker-1] Saving keyword electric bikes kits
+[2015-06-28 12:42:26,040: WARNING/Worker-1] Getting Google top 10 for electric bike conversions
+[2015-06-28 12:42:26,043: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:42:27,630: WARNING/Worker-1] Getting SEO metrics from Moz for electric bike conversions
+[2015-06-28 12:42:28,345: WARNING/Worker-1] Saving keyword electric bike conversions
+[2015-06-28 12:42:53,382: WARNING/Worker-1] Getting Google top 10 for electric bikes scooters
+[2015-06-28 12:42:53,383: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:42:54,966: WARNING/Worker-1] Getting SEO metrics from Moz for electric bikes scooters
+[2015-06-28 12:42:55,785: WARNING/Worker-1] Saving keyword electric bikes scooters
+[2015-06-28 12:43:20,829: WARNING/Worker-1] Getting Google top 10 for electric bikes prices
+[2015-06-28 12:43:20,832: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:43:24,011: WARNING/Worker-1] Getting SEO metrics from Moz for electric bikes prices
+[2015-06-28 12:43:24,471: WARNING/Worker-1] Saving keyword electric bikes prices
+[2015-06-28 12:43:49,502: WARNING/Worker-1] Getting Google top 10 for electric bike reviews uk
+[2015-06-28 12:43:49,504: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:43:53,369: WARNING/Worker-1] Getting SEO metrics from Moz for electric bike reviews uk
+[2015-06-28 12:43:54,367: WARNING/Worker-1] Saving keyword electric bike reviews uk
+[2015-06-28 12:44:19,411: WARNING/Worker-1] Getting Google top 10 for chinese electric bike
+[2015-06-28 12:44:19,414: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:44:22,143: WARNING/Worker-1] Getting SEO metrics from Moz for chinese electric bike
+[2015-06-28 12:44:22,854: WARNING/Worker-1] Saving keyword chinese electric bike
+[2015-06-28 12:44:47,874: WARNING/Worker-1] Getting Google top 10 for electric bike manufacturers
+[2015-06-28 12:44:47,876: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:44:49,656: WARNING/Worker-1] Getting SEO metrics from Moz for electric bike manufacturers
+[2015-06-28 12:44:50,506: WARNING/Worker-1] Saving keyword electric bike manufacturers
+[2015-06-28 12:45:15,546: WARNING/Worker-1] Getting Google top 10 for electric bikes china
+[2015-06-28 12:45:15,549: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-06-28 12:45:17,962: WARNING/Worker-1] Getting SEO metrics from Moz for electric bikes china
+[2015-06-28 12:45:18,534: WARNING/Worker-1] Saving keyword electric bikes china
+[2015-06-28 12:45:18,540: INFO/MainProcess] Task keyword_ideas.tasks.get_keyword_seo_metrics[1555553a-c45a-4e3e-8eb1-d6caa0541de2] succeeded in 2788.13874355s: None
+[2015-06-29 09:14:55,166: INFO/MainProcess] Connected to django://localhost//
+/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2015-06-29 09:14:55,180: WARNING/MainProcess] /home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2015-06-29 09:14:55,180: WARNING/MainProcess] celery@monkeytown ready.
+
+worker: Warm shutdown (MainProcess)
+ 
+ -------------- celery@monkeytown v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-3.13.0-53-generic-i686-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         gaptooth:0xb6ec6f8c
+- ** ---------- .> transport:   django://localhost//
+- ** ---------- .> results:     disabled
+- *** --- * --- .> concurrency: 4 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . gaptooth.celery.debug_task
+  . keyword_ideas.tasks.get_keyword_seo_metrics
+  . keyword_ideas.tasks.get_seed_keyword_ideas
+
+[2015-06-29 18:27:58,550: INFO/MainProcess] Connected to django://localhost//
+/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2015-06-29 18:27:58,564: WARNING/MainProcess] /home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2015-06-29 18:27:58,564: WARNING/MainProcess] celery@monkeytown ready.

@@ -1,0 +1,9 @@
+{% if seed_keywords %}
+    <ul>
+    {% for seed_keyword in seed_keywords %}
+        <li><a href="/keyword-ideas/{{ seed_keyword.id }}/results/">{{ seed_keyword.phrase }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No seed keywords are available.</p>
+{% endif %}
