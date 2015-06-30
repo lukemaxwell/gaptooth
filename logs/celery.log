@@ -838,3 +838,11 @@ worker: Warm shutdown (MainProcess)
   warnings.warn('Using settings.DEBUG leads to a memory leak, never '
 
 [2015-06-29 18:27:58,564: WARNING/MainProcess] celery@monkeytown ready.
+[2015-06-30 06:12:36,541: INFO/MainProcess] Connected to django://localhost//
+/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2015-06-30 06:12:36,554: WARNING/MainProcess] /home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2015-06-30 06:12:36,555: WARNING/MainProcess] celery@monkeytown ready.

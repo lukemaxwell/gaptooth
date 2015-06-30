@@ -1,30 +1,3 @@
-#!/usr/bin/python
-#
-# Copyright 2015 Google Inc. All Rights Reserved.
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#      http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-
-"""This example retrieves keywords that are related to a given keyword.
-
-The LoadFromStorage method is pulling credentials and properties from a
-"googleads.yaml" file. By default, it looks for this file in your home
-directory. For more information, see the "Caching authentication information"
-section of our README.
-
-Tags: TargetingIdeaService.get
-Api: AdWordsOnly
-"""
-
 from googleads import adwords
 from operator import itemgetter
 from .googlespider import GoogleSpider
@@ -115,3 +88,17 @@ def get_keyword_ideas(keyphrase, client):
         more_pages = offset < int(page['totalNumEntries'])
         return data
 
+def get_search_volume_score(searches, total_searches):
+    return int(round((float(searches)/total_searches)*100,0))
+
+def get_links_score(links, total_links):
+    return int(round(100-((float(links)/total_links)*100),0))
+
+def get_moz_score(score):
+    return int(round(100-score,0))
+
+def get_opportunity_score(search_volume_score, domain_authority_score, page_authority_score, links_score):
+    weightings = [0.25, 0.25, 0.25, 0.25]
+    opportunity_score = int(round(search_volume_score*weightings[0] + domain_authority_score*weightings[1] + page_authority_score*weightings[2] + links_score*weightings[3],0))
+    return opportunity_score
+    
