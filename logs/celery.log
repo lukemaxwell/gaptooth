@@ -846,3 +846,862 @@ worker: Warm shutdown (MainProcess)
   warnings.warn('Using settings.DEBUG leads to a memory leak, never '
 
 [2015-06-30 06:12:36,555: WARNING/MainProcess] celery@monkeytown ready.
+[2015-07-01 19:25:49,156: INFO/MainProcess] Connected to django://localhost//
+/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2015-07-01 19:25:49,171: WARNING/MainProcess] /home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2015-07-01 19:25:49,171: WARNING/MainProcess] celery@monkeytown ready.
+
+worker: Warm shutdown (MainProcess)
+ 
+ -------------- celery@monkeytown v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-3.13.0-53-generic-i686-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         gaptooth:0xb6f4ef8c
+- ** ---------- .> transport:   django://localhost//
+- ** ---------- .> results:     disabled
+- *** --- * --- .> concurrency: 4 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . gaptooth.celery.debug_task
+  . keyword_ideas.tasks.get_keyword_seo_metrics
+  . keyword_ideas.tasks.get_seed_keyword_ideas
+
+[2015-07-02 07:32:35,480: INFO/MainProcess] Connected to django://localhost//
+/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2015-07-02 07:32:35,492: WARNING/MainProcess] /home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2015-07-02 07:32:35,492: WARNING/MainProcess] celery@monkeytown ready.
+
+worker: Warm shutdown (MainProcess)
+ 
+ -------------- celery@monkeytown v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-3.13.0-53-generic-i686-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         gaptooth:0xb6fabf8c
+- ** ---------- .> transport:   django://localhost//
+- ** ---------- .> results:     disabled
+- *** --- * --- .> concurrency: 4 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . gaptooth.celery.debug_task
+  . keyword_ideas.tasks.get_keyword_seo_metrics
+  . keyword_ideas.tasks.get_seed_keyword_ideas
+
+[2015-07-02 08:01:18,244: INFO/MainProcess] Connected to django://localhost//
+/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2015-07-02 08:01:18,255: WARNING/MainProcess] /home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2015-07-02 08:01:18,255: WARNING/MainProcess] celery@monkeytown ready.
+[2015-07-02 08:04:13,681: INFO/MainProcess] Received task: keyword_ideas.tasks.get_seed_keyword_ideas[70567d52-915d-487c-8871-29ccef1dd900]
+[2015-07-02 08:04:13,689: WARNING/Worker-1] got client
+[2015-07-02 08:04:13,691: WARNING/Worker-1] Initializing adwords targetting idea service
+[2015-07-02 08:04:16,247: WARNING/Worker-1] Running query
+[2015-07-02 08:04:16,248: INFO/Worker-1] Refreshing access_token
+[2015-07-02 08:04:18,608: WARNING/Worker-1] ['key chain', 135000L, 10.17, 0.76, 'HIGH']
+[2015-07-02 08:04:18,619: WARNING/Worker-1] ['key holder', 135000L, 4.21, 0.81, 'HIGH']
+[2015-07-02 08:04:18,635: WARNING/Worker-1] ['key ring', 90500L, 8.12, 0.7, 'MEDIUM']
+[2015-07-02 08:04:18,652: WARNING/Worker-1] ['key rack', 40500L, 5.89, 1.0, 'HIGH']
+[2015-07-02 08:04:18,666: WARNING/Worker-1] ['key box', 27100L, 22.62, 0.92, 'HIGH']
+[2015-07-02 08:04:18,671: WARNING/Worker-1] ['key organizer', 14800L, 10.78, 0.91, 'HIGH']
+[2015-07-02 08:04:18,676: WARNING/Worker-1] ['key holders', 12100L, 4.84, 0.97, 'HIGH']
+[2015-07-02 08:04:18,681: WARNING/Worker-1] ['key racks', 6600L, 4.97, 1.0, 'HIGH']
+[2015-07-02 08:04:18,697: WARNING/Worker-1] ['key storage', 5400L, 20.99, 1.0, 'HIGH']
+[2015-07-02 08:04:18,714: WARNING/Worker-1] ['ring key chain', 4400L, 13.86, 0.93, 'HIGH']
+[2015-07-02 08:04:18,730: WARNING/Worker-1] ['key chain holder', 3600L, 5.96, 0.71, 'HIGH']
+[2015-07-02 08:04:18,740: WARNING/Worker-1] ['keys holder', 3600L, 4.78, 0.85, 'HIGH']
+[2015-07-02 08:04:18,746: WARNING/Worker-1] ['key organizers', 1900L, 21.19, 0.99, 'HIGH']
+[2015-07-02 08:04:18,751: WARNING/Worker-1] ['key accessories', 1900L, 4.26, 0.39, 'LOW']
+[2015-07-02 08:04:18,760: WARNING/Worker-1] ['pocket key holder', 1300L, 3.99, 1.0, 'HIGH']
+[2015-07-02 08:04:18,776: WARNING/Worker-1] ['compact key holder', 1300L, 3.28, 0.88, 'HIGH']
+[2015-07-02 08:04:18,792: WARNING/Worker-1] ['keysmart key organizer', 880L, 3.51, 0.9, 'HIGH']
+[2015-07-02 08:04:18,808: WARNING/Worker-1] ['keys chain', 880L, 9.01, 0.77, 'HIGH']
+[2015-07-02 08:04:18,815: WARNING/Worker-1] ['key holders for the wall', 880L, 2.3, 0.75, 'HIGH']
+[2015-07-02 08:04:18,820: WARNING/Worker-1] ['keysmart compact key organizer', 590L, 1.97, 0.92, 'HIGH']
+[2015-07-02 08:04:18,825: WARNING/Worker-1] ['keysmart extended', 590L, 1.17, 0.21, 'LOW']
+[2015-07-02 08:04:18,840: WARNING/Worker-1] ['ring key', 480L, 5.37, 0.3, 'LOW']
+[2015-07-02 08:04:18,856: WARNING/Worker-1] ['keys organizer', 480L, 8.8, 0.79, 'HIGH']
+[2015-07-02 08:04:18,872: WARNING/Worker-1] ['keysmart compact key holder', 480L, 4.22, 0.67, 'MEDIUM']
+[2015-07-02 08:04:18,883: WARNING/Worker-1] ['keysmart 2.0 extended', 390L, 1.53, 0.25, 'LOW']
+[2015-07-02 08:04:18,887: WARNING/Worker-1] ['key ring accessories', 390L, 5.55, 0.78, 'HIGH']
+[2015-07-02 08:04:18,892: WARNING/Worker-1] ['key chain holders', 390L, 4.57, 0.77, 'HIGH']
+[2015-07-02 08:04:18,898: WARNING/Worker-1] ['home key holder', 390L, 2.53, 0.86, 'HIGH']
+[2015-07-02 08:04:18,914: WARNING/Worker-1] ['keys holders', 390L, 1.88, 0.7, 'MEDIUM']
+[2015-07-02 08:04:18,932: WARNING/Worker-1] ['key holding', 320L, 25.52, 0.28, 'LOW']
+[2015-07-02 08:04:18,949: WARNING/Worker-1] ['key holder pocket', 320L, 2.25, 0.8, 'HIGH']
+[2015-07-02 08:04:18,958: WARNING/Worker-1] ['keysmart assembly', 260L, 0, 0.01, 'LOW']
+[2015-07-02 08:04:18,963: WARNING/Worker-1] ['steel key ring', 260L, 2.29, 0.62, 'MEDIUM']
+[2015-07-02 08:04:18,968: WARNING/Worker-1] ['black key holder', 260L, 2.85, 0.82, 'HIGH']
+[2015-07-02 08:04:18,973: WARNING/Worker-1] ['easy key ring', 210L, 3.0, 0.87, 'HIGH']
+[2015-07-02 08:04:18,989: WARNING/Worker-1] ['extended keysmart', 170L, 1.04, 0.92, 'HIGH']
+[2015-07-02 08:04:19,005: WARNING/Worker-1] ['key holder chain', 170L, 4.21, 0.88, 'HIGH']
+[2015-07-02 08:04:19,021: WARNING/Worker-1] ['key key holder', 170L, 1.35, 0.9, 'HIGH']
+[2015-07-02 08:04:19,029: WARNING/Worker-1] ['key holder ring', 170L, 2.72, 0.87, 'HIGH']
+[2015-07-02 08:04:19,034: WARNING/Worker-1] ['keysmart 2.0 review', 140L, 3.61, 0.16, 'LOW']
+[2015-07-02 08:04:19,040: WARNING/Worker-1] ['pocket key chain', 140L, 6.59, 1.0, 'HIGH']
+[2015-07-02 08:04:19,050: WARNING/Worker-1] ['compact key', 140L, 0, 0.27, 'LOW']
+[2015-07-02 08:04:19,066: WARNING/Worker-1] ['keysmart key holder', 140L, 2.28, 0.93, 'HIGH']
+[2015-07-02 08:04:19,082: WARNING/Worker-1] ['chain key ring', 140L, 2.71, 0.88, 'HIGH']
+[2015-07-02 08:04:19,104: WARNING/Worker-1] ['pocket holders', 140L, 2.53, 0.39, 'LOW']
+[2015-07-02 08:04:19,110: WARNING/Worker-1] ['steel key chain', 140L, 1.06, 0.94, 'HIGH']
+[2015-07-02 08:04:19,115: WARNING/Worker-1] ['holder for keys', 140L, 3.22, 0.95, 'HIGH']
+[2015-07-02 08:04:19,120: WARNING/Worker-1] ['aluminum key holder', 140L, 0.09, 0.99, 'HIGH']
+[2015-07-02 08:04:19,136: WARNING/Worker-1] ['compact holder', 140L, 0.39, 0.46, 'MEDIUM']
+[2015-07-02 08:04:19,152: WARNING/Worker-1] ['key holders for home', 110L, 3.25, 0.88, 'HIGH']
+[2015-07-02 08:04:19,169: WARNING/Worker-1] ['pocket key holders', 110L, 4.37, 0.99, 'HIGH']
+[2015-07-02 08:04:19,176: WARNING/Worker-1] ['chain key holder', 110L, 0.38, 0.8, 'HIGH']
+[2015-07-02 08:04:19,182: WARNING/Worker-1] ['red key ring', 110L, 3.18, 1.0, 'HIGH']
+[2015-07-02 08:04:19,187: WARNING/Worker-1] ['compact key ring', 90L, 4.67, 0.83, 'HIGH']
+[2015-07-02 08:04:19,198: WARNING/Worker-1] ['a key ring', 90L, 2.75, 0.56, 'MEDIUM']
+[2015-07-02 08:04:19,214: WARNING/Worker-1] ['key pocket holder', 90L, 3.5, 0.96, 'HIGH']
+[2015-07-02 08:04:19,231: WARNING/Worker-1] ['retracting key ring', 90L, 0, 1.0, 'HIGH']
+[2015-07-02 08:04:19,248: WARNING/Worker-1] ['office key holder', 90L, 14.31, 0.7, 'MEDIUM']
+[2015-07-02 08:04:19,252: WARNING/Worker-1] ['red key holder', 90L, 3.8, 0.98, 'HIGH']
+[2015-07-02 08:04:19,258: WARNING/Worker-1] ['keysmart organizer', 70L, 1.67, 0.66, 'MEDIUM']
+[2015-07-02 08:04:19,264: WARNING/Worker-1] ['keysmart accessories', 70L, 3.16, 0.72, 'HIGH']
+[2015-07-02 08:04:19,280: WARNING/Worker-1] ['the key holder', 70L, 3.02, 0.31, 'LOW']
+[2015-07-02 08:04:19,297: WARNING/Worker-1] ['retracting key chain', 70L, 5.26, 1.0, 'HIGH']
+[2015-07-02 08:04:19,314: WARNING/Worker-1] ['key ring key chain', 70L, 8.42, 0.49, 'MEDIUM']
+[2015-07-02 08:04:19,322: WARNING/Worker-1] ['key holder for pocket', 70L, 0.89, 0.86, 'HIGH']
+[2015-07-02 08:04:19,327: WARNING/Worker-1] ['easy key chain', 70L, 5.23, 0.95, 'HIGH']
+[2015-07-02 08:04:19,332: WARNING/Worker-1] ['key holder home', 70L, 0.7, 0.87, 'HIGH']
+[2015-07-02 08:04:19,339: WARNING/Worker-1] ['compact keys', 50L, 3.07, 0.63, 'MEDIUM']
+[2015-07-02 08:04:19,355: WARNING/Worker-1] ['keys key holder', 50L, 0.3, 0.95, 'HIGH']
+[2015-07-02 08:04:19,371: WARNING/Worker-1] ['key holder for home', 50L, 3.01, 1.0, 'HIGH']
+[2015-07-02 08:04:19,388: WARNING/Worker-1] ['keysmart assemble', 40L, 0, 0.01, 'LOW']
+[2015-07-02 08:04:19,395: WARNING/Worker-1] ['usa keys', 40L, 0.3, 0.16, 'LOW']
+[2015-07-02 08:04:19,401: WARNING/Worker-1] ['key ring solutions', 30L, 0, 0.48, 'MEDIUM']
+[2015-07-02 08:04:19,407: WARNING/Worker-1] ['make key holder', 30L, 1.17, 0.35, 'LOW']
+[2015-07-02 08:04:19,422: WARNING/Worker-1] ['ring with key', 30L, 1.11, 0.57, 'MEDIUM']
+[2015-07-02 08:04:19,438: WARNING/Worker-1] ['key holder australia', 30L, 0, 0.37, 'LOW']
+[2015-07-02 08:04:19,454: WARNING/Worker-1] ['key caddies', 30L, 4.82, 0.95, 'HIGH']
+[2015-07-02 08:04:19,465: WARNING/Worker-1] ['key and chain', 20L, 4.88, 0.13, 'LOW']
+[2015-07-02 08:04:19,471: WARNING/Worker-1] ['make key ring', 20L, 2.0, 0.68, 'MEDIUM']
+[2015-07-02 08:04:19,476: WARNING/Worker-1] ['a key holder', 20L, 1.77, 0.94, 'HIGH']
+[2015-07-02 08:04:19,484: WARNING/Worker-1] ['keys on ring', 20L, 0, 0.32, 'LOW']
+[2015-07-02 08:04:19,500: WARNING/Worker-1] [['keyword', 'search_volume', 'average_cpc', 'competition', 'competition_class'], ['key chain', 135000L, 10.17, 0.76, 'HIGH'], ['key holder', 135000L, 4.21, 0.81, 'HIGH'], ['key ring', 90500L, 8.12, 0.7, 'MEDIUM'], ['key rack', 40500L, 5.89, 1.0, 'HIGH'], ['key box', 27100L, 22.62, 0.92, 'HIGH'], ['key organizer', 14800L, 10.78, 0.91, 'HIGH'], ['key holders', 12100L, 4.84, 0.97, 'HIGH'], ['key racks', 6600L, 4.97, 1.0, 'HIGH'], ['key storage', 5400L, 20.99, 1.0, 'HIGH'], ['ring key chain', 4400L, 13.86, 0.93, 'HIGH'], ['key chain holder', 3600L, 5.96, 0.71, 'HIGH'], ['keys holder', 3600L, 4.78, 0.85, 'HIGH'], ['key organizers', 1900L, 21.19, 0.99, 'HIGH'], ['key accessories', 1900L, 4.26, 0.39, 'LOW'], ['pocket key holder', 1300L, 3.99, 1.0, 'HIGH'], ['compact key holder', 1300L, 3.28, 0.88, 'HIGH'], ['keysmart key organizer', 880L, 3.51, 0.9, 'HIGH'], ['keys chain', 880L, 9.01, 0.77, 'HIGH'], ['key holders for the wall', 880L, 2.3, 0.75, 'HIGH'], ['keysmart compact key organizer', 590L, 1.97, 0.92, 'HIGH'], ['keysmart extended', 590L, 1.17, 0.21, 'LOW'], ['ring key', 480L, 5.37, 0.3, 'LOW'], ['keys organizer', 480L, 8.8, 0.79, 'HIGH'], ['keysmart compact key holder', 480L, 4.22, 0.67, 'MEDIUM'], ['keysmart 2.0 extended', 390L, 1.53, 0.25, 'LOW'], ['key ring accessories', 390L, 5.55, 0.78, 'HIGH'], ['key chain holders', 390L, 4.57, 0.77, 'HIGH'], ['home key holder', 390L, 2.53, 0.86, 'HIGH'], ['keys holders', 390L, 1.88, 0.7, 'MEDIUM'], ['key holding', 320L, 25.52, 0.28, 'LOW'], ['key holder pocket', 320L, 2.25, 0.8, 'HIGH'], ['keysmart assembly', 260L, 0, 0.01, 'LOW'], ['steel key ring', 260L, 2.29, 0.62, 'MEDIUM'], ['black key holder', 260L, 2.85, 0.82, 'HIGH'], ['easy key ring', 210L, 3.0, 0.87, 'HIGH'], ['extended keysmart', 170L, 1.04, 0.92, 'HIGH'], ['key holder chain', 170L, 4.21, 0.88, 'HIGH'], ['key key holder', 170L, 1.35, 0.9, 'HIGH'], ['key holder ring', 170L, 2.72, 0.87, 'HIGH'], ['keysmart 2.0 review', 140L, 3.61, 0.16, 'LOW'], ['pocket key chain', 140L, 6.59, 1.0, 'HIGH'], ['compact key', 140L, 0, 0.27, 'LOW'], ['keysmart key holder', 140L, 2.28, 0.93, 'HIGH'], ['chain key ring', 140L, 2.71, 0.88, 'HIGH'], ['pocket holders', 140L, 2.53, 0.39, 'LOW'], ['steel key chain', 140L, 1.06, 0.94, 'HIGH'], ['holder for keys', 140L, 3.22, 0.95, 'HIGH'], ['aluminum key holder', 140L, 0.09, 0.99, 'HIGH'], ['compact holder', 140L, 0.39, 0.46, 'MEDIUM'], ['key holders for home', 110L, 3.25, 0.88, 'HIGH'], ['pocket key holders', 110L, 4.37, 0.99, 'HIGH'], ['chain key holder', 110L, 0.38, 0.8, 'HIGH'], ['red key ring', 110L, 3.18, 1.0, 'HIGH'], ['compact key ring', 90L, 4.67, 0.83, 'HIGH'], ['a key ring', 90L, 2.75, 0.56, 'MEDIUM'], ['key pocket holder', 90L, 3.5, 0.96, 'HIGH'], ['retracting key ring', 90L, 0, 1.0, 'HIGH'], ['office key holder', 90L, 14.31, 0.7, 'MEDIUM'], ['red key holder', 90L, 3.8, 0.98, 'HIGH'], ['keysmart organizer', 70L, 1.67, 0.66, 'MEDIUM'], ['keysmart accessories', 70L, 3.16, 0.72, 'HIGH'], ['the key holder', 70L, 3.02, 0.31, 'LOW'], ['retracting key chain', 70L, 5.26, 1.0, 'HIGH'], ['key ring key chain', 70L, 8.42, 0.49, 'MEDIUM'], ['key holder for pocket', 70L, 0.89, 0.86, 'HIGH'], ['easy key chain', 70L, 5.23, 0.95, 'HIGH'], ['key holder home', 70L, 0.7, 0.87, 'HIGH'], ['compact keys', 50L, 3.07, 0.63, 'MEDIUM'], ['keys key holder', 50L, 0.3, 0.95, 'HIGH'], ['key holder for home', 50L, 3.01, 1.0, 'HIGH'], ['keysmart assemble', 40L, 0, 0.01, 'LOW'], ['usa keys', 40L, 0.3, 0.16, 'LOW'], ['key ring solutions', 30L, 0, 0.48, 'MEDIUM'], ['make key holder', 30L, 1.17, 0.35, 'LOW'], ['ring with key', 30L, 1.11, 0.57, 'MEDIUM'], ['key holder australia', 30L, 0, 0.37, 'LOW'], ['key caddies', 30L, 4.82, 0.95, 'HIGH'], ['key and chain', 20L, 4.88, 0.13, 'LOW'], ['make key ring', 20L, 2.0, 0.68, 'MEDIUM'], ['a key holder', 20L, 1.77, 0.94, 'HIGH'], ['keys on ring', 20L, 0, 0.32, 'LOW']]
+[2015-07-02 08:04:19,500: INFO/MainProcess] Task keyword_ideas.tasks.get_seed_keyword_ideas[70567d52-915d-487c-8871-29ccef1dd900] succeeded in 5.817022186s: None
+[2015-07-02 08:05:09,484: INFO/MainProcess] Received task: keyword_ideas.tasks.get_keyword_seo_metrics[fa3c84d2-38d8-4ef8-b3ee-80c2137ed17f]
+[2015-07-02 08:05:09,510: WARNING/Worker-2] Getting Google top 10 for key chain
+[2015-07-02 08:05:09,520: INFO/Worker-2] Starting new HTTPS connection (1): www.google.co.uk
+/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/requests/packages/urllib3/connectionpool.py:730: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.org/en/latest/security.html (This warning will only appear once by default.)
+  InsecureRequestWarning)
+
+[2015-07-02 08:05:09,713: WARNING/Worker-2] /home/pob/Documents/playground/env/local/lib/python2.7/site-packages/requests/packages/urllib3/connectionpool.py:730: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.org/en/latest/security.html (This warning will only appear once by default.)
+  InsecureRequestWarning)
+
+[2015-07-02 08:05:10,866: WARNING/Worker-2] Getting SEO metrics from Moz for key chain
+[2015-07-02 08:05:10,869: ERROR/MainProcess] Task keyword_ideas.tasks.get_keyword_seo_metrics[fa3c84d2-38d8-4ef8-b3ee-80c2137ed17f] raised unexpected: TypeError("object of type 'NoneType' has no len()",)
+Traceback (most recent call last):
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/app/trace.py", line 240, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/app/trace.py", line 438, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/tasks.py", line 19, in get_keyword_seo_metrics
+    metrics = get_metrics(urls)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/mozapi.py", line 209, in get_metrics
+    metrics = l.urlMetrics(urls)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/mozapi.py", line 186, in urlMetrics
+    return self.query('url-metrics', data=json.dumps(urls), Cols=cols)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/mozapi.py", line 169, in query
+    params['Signature'] = self.signature(expires)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/mozapi.py", line 163, in signature
+    return base64.b64encode(hmac.new(self.secret_key, toSign, hashlib.sha1).digest())
+  File "/usr/lib/python2.7/hmac.py", line 133, in new
+    return HMAC(key, msg, digestmod)
+  File "/usr/lib/python2.7/hmac.py", line 68, in __init__
+    if len(key) > blocksize:
+TypeError: object of type 'NoneType' has no len()
+[2015-07-02 08:10:00,160: INFO/MainProcess] Received task: keyword_ideas.tasks.get_keyword_seo_metrics[69519a15-5542-4946-88a7-d5b899468c54]
+[2015-07-02 08:10:00,180: WARNING/Worker-3] Getting Google top 10 for key chain
+[2015-07-02 08:10:00,186: INFO/Worker-3] Starting new HTTPS connection (1): www.google.co.uk
+/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/requests/packages/urllib3/connectionpool.py:730: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.org/en/latest/security.html (This warning will only appear once by default.)
+  InsecureRequestWarning)
+
+[2015-07-02 08:10:00,318: WARNING/Worker-3] /home/pob/Documents/playground/env/local/lib/python2.7/site-packages/requests/packages/urllib3/connectionpool.py:730: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.org/en/latest/security.html (This warning will only appear once by default.)
+  InsecureRequestWarning)
+
+[2015-07-02 08:10:01,796: WARNING/Worker-3] Getting SEO metrics from Moz for key chain
+[2015-07-02 08:10:01,798: ERROR/MainProcess] Task keyword_ideas.tasks.get_keyword_seo_metrics[69519a15-5542-4946-88a7-d5b899468c54] raised unexpected: TypeError("object of type 'NoneType' has no len()",)
+Traceback (most recent call last):
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/app/trace.py", line 240, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/app/trace.py", line 438, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/tasks.py", line 19, in get_keyword_seo_metrics
+    metrics = get_metrics(urls)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/mozapi.py", line 209, in get_metrics
+    metrics = l.urlMetrics(urls)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/mozapi.py", line 186, in urlMetrics
+    return self.query('url-metrics', data=json.dumps(urls), Cols=cols)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/mozapi.py", line 169, in query
+    params['Signature'] = self.signature(expires)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/mozapi.py", line 163, in signature
+    return base64.b64encode(hmac.new(self.secret_key, toSign, hashlib.sha1).digest())
+  File "/usr/lib/python2.7/hmac.py", line 133, in new
+    return HMAC(key, msg, digestmod)
+  File "/usr/lib/python2.7/hmac.py", line 68, in __init__
+    if len(key) > blocksize:
+TypeError: object of type 'NoneType' has no len()
+
+worker: Warm shutdown (MainProcess)
+ 
+ -------------- celery@monkeytown v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-3.13.0-53-generic-i686-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         gaptooth:0xb6eb8f8c
+- ** ---------- .> transport:   django://localhost//
+- ** ---------- .> results:     disabled
+- *** --- * --- .> concurrency: 4 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . gaptooth.celery.debug_task
+  . keyword_ideas.tasks.get_keyword_seo_metrics
+  . keyword_ideas.tasks.get_seed_keyword_ideas
+
+[2015-07-02 08:12:21,568: INFO/MainProcess] Connected to django://localhost//
+/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2015-07-02 08:12:21,583: WARNING/MainProcess] /home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2015-07-02 08:12:21,583: WARNING/MainProcess] celery@monkeytown ready.
+[2015-07-02 08:21:07,693: INFO/MainProcess] Received task: keyword_ideas.tasks.get_keyword_seo_metrics[0fe85fd5-65e3-4aa2-b52b-62b871c07567]
+[2015-07-02 08:21:07,701: WARNING/Worker-1] Getting Google top 10 for key holder
+[2015-07-02 08:21:07,714: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/requests/packages/urllib3/connectionpool.py:730: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.org/en/latest/security.html (This warning will only appear once by default.)
+  InsecureRequestWarning)
+
+[2015-07-02 08:21:07,830: WARNING/Worker-1] /home/pob/Documents/playground/env/local/lib/python2.7/site-packages/requests/packages/urllib3/connectionpool.py:730: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.org/en/latest/security.html (This warning will only appear once by default.)
+  InsecureRequestWarning)
+
+[2015-07-02 08:21:09,059: WARNING/Worker-1] Getting SEO metrics from Moz for key holder
+[2015-07-02 08:21:09,060: ERROR/MainProcess] Task keyword_ideas.tasks.get_keyword_seo_metrics[0fe85fd5-65e3-4aa2-b52b-62b871c07567] raised unexpected: TypeError("object of type 'NoneType' has no len()",)
+Traceback (most recent call last):
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/app/trace.py", line 240, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/app/trace.py", line 438, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/tasks.py", line 19, in get_keyword_seo_metrics
+    metrics = get_metrics(urls)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/mozapi.py", line 209, in get_metrics
+    metrics = l.urlMetrics(urls)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/mozapi.py", line 186, in urlMetrics
+    return self.query('url-metrics', data=json.dumps(urls), Cols=cols)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/mozapi.py", line 169, in query
+    params['Signature'] = self.signature(expires)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/mozapi.py", line 163, in signature
+    return base64.b64encode(hmac.new(self.secret_key, toSign, hashlib.sha1).digest())
+  File "/usr/lib/python2.7/hmac.py", line 133, in new
+    return HMAC(key, msg, digestmod)
+  File "/usr/lib/python2.7/hmac.py", line 68, in __init__
+    if len(key) > blocksize:
+TypeError: object of type 'NoneType' has no len()
+
+worker: Warm shutdown (MainProcess)
+ 
+ -------------- celery@monkeytown v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-3.13.0-53-generic-i686-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         gaptooth:0xb6ec0f8c
+- ** ---------- .> transport:   django://localhost//
+- ** ---------- .> results:     disabled
+- *** --- * --- .> concurrency: 4 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . gaptooth.celery.debug_task
+  . keyword_ideas.tasks.get_keyword_seo_metrics
+  . keyword_ideas.tasks.get_seed_keyword_ideas
+
+[2015-07-02 08:22:44,742: INFO/MainProcess] Connected to django://localhost//
+/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2015-07-02 08:22:44,752: WARNING/MainProcess] /home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2015-07-02 08:22:44,752: WARNING/MainProcess] celery@monkeytown ready.
+[2015-07-02 08:23:14,835: INFO/MainProcess] Received task: keyword_ideas.tasks.get_keyword_seo_metrics[0a42e42e-5cb7-4496-b520-a25e86d4b2dd]
+[2015-07-02 08:23:14,843: WARNING/Worker-1] Getting Google top 10 for key holder
+[2015-07-02 08:23:14,854: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/requests/packages/urllib3/connectionpool.py:730: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.org/en/latest/security.html (This warning will only appear once by default.)
+  InsecureRequestWarning)
+
+[2015-07-02 08:23:15,122: WARNING/Worker-1] /home/pob/Documents/playground/env/local/lib/python2.7/site-packages/requests/packages/urllib3/connectionpool.py:730: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.org/en/latest/security.html (This warning will only appear once by default.)
+  InsecureRequestWarning)
+
+[2015-07-02 08:23:17,455: WARNING/Worker-1] Getting SEO metrics from Moz for key holder
+[2015-07-02 08:23:17,455: WARNING/Worker-1] CREDENTIALS:
+[2015-07-02 08:23:17,455: WARNING/Worker-1] None
+[2015-07-02 08:23:17,455: WARNING/Worker-1] None
+[2015-07-02 08:23:17,457: ERROR/MainProcess] Task keyword_ideas.tasks.get_keyword_seo_metrics[0a42e42e-5cb7-4496-b520-a25e86d4b2dd] raised unexpected: TypeError("object of type 'NoneType' has no len()",)
+Traceback (most recent call last):
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/app/trace.py", line 240, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/app/trace.py", line 438, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/tasks.py", line 19, in get_keyword_seo_metrics
+    metrics = get_metrics(urls)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/mozapi.py", line 211, in get_metrics
+    metrics = l.urlMetrics(urls)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/mozapi.py", line 186, in urlMetrics
+    return self.query('url-metrics', data=json.dumps(urls), Cols=cols)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/mozapi.py", line 169, in query
+    params['Signature'] = self.signature(expires)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/mozapi.py", line 163, in signature
+    return base64.b64encode(hmac.new(self.secret_key, toSign, hashlib.sha1).digest())
+  File "/usr/lib/python2.7/hmac.py", line 133, in new
+    return HMAC(key, msg, digestmod)
+  File "/usr/lib/python2.7/hmac.py", line 68, in __init__
+    if len(key) > blocksize:
+TypeError: object of type 'NoneType' has no len()
+
+worker: Warm shutdown (MainProcess)
+ 
+ -------------- celery@monkeytown v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-3.13.0-53-generic-i686-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         gaptooth:0xb6ecef8c
+- ** ---------- .> transport:   django://localhost//
+- ** ---------- .> results:     disabled
+- *** --- * --- .> concurrency: 4 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . gaptooth.celery.debug_task
+  . keyword_ideas.tasks.get_keyword_seo_metrics
+  . keyword_ideas.tasks.get_seed_keyword_ideas
+
+[2015-07-02 08:24:14,736: INFO/MainProcess] Connected to django://localhost//
+/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2015-07-02 08:24:14,747: WARNING/MainProcess] /home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2015-07-02 08:24:14,747: WARNING/MainProcess] celery@monkeytown ready.
+[2015-07-02 08:24:49,844: INFO/MainProcess] Received task: keyword_ideas.tasks.get_keyword_seo_metrics[513c9210-344c-4858-b05a-dfc8080889b1]
+[2015-07-02 08:24:49,852: WARNING/Worker-1] Getting Google top 10 for key holder
+[2015-07-02 08:24:49,863: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/requests/packages/urllib3/connectionpool.py:730: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.org/en/latest/security.html (This warning will only appear once by default.)
+  InsecureRequestWarning)
+
+[2015-07-02 08:24:50,034: WARNING/Worker-1] /home/pob/Documents/playground/env/local/lib/python2.7/site-packages/requests/packages/urllib3/connectionpool.py:730: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.org/en/latest/security.html (This warning will only appear once by default.)
+  InsecureRequestWarning)
+
+[2015-07-02 08:24:50,847: WARNING/Worker-1] Getting SEO metrics from Moz for key holder
+[2015-07-02 08:24:50,847: WARNING/Worker-1] CREDENTIALS:
+[2015-07-02 08:24:50,847: WARNING/Worker-1] None
+[2015-07-02 08:24:50,847: WARNING/Worker-1] None
+[2015-07-02 08:24:50,848: ERROR/MainProcess] Task keyword_ideas.tasks.get_keyword_seo_metrics[513c9210-344c-4858-b05a-dfc8080889b1] raised unexpected: TypeError("object of type 'NoneType' has no len()",)
+Traceback (most recent call last):
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/app/trace.py", line 240, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/app/trace.py", line 438, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/tasks.py", line 19, in get_keyword_seo_metrics
+    metrics = get_metrics(urls)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/mozapi.py", line 211, in get_metrics
+    metrics = l.urlMetrics(urls)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/mozapi.py", line 186, in urlMetrics
+    return self.query('url-metrics', data=json.dumps(urls), Cols=cols)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/mozapi.py", line 169, in query
+    params['Signature'] = self.signature(expires)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/mozapi.py", line 163, in signature
+    return base64.b64encode(hmac.new(self.secret_key, toSign, hashlib.sha1).digest())
+  File "/usr/lib/python2.7/hmac.py", line 133, in new
+    return HMAC(key, msg, digestmod)
+  File "/usr/lib/python2.7/hmac.py", line 68, in __init__
+    if len(key) > blocksize:
+TypeError: object of type 'NoneType' has no len()
+[2015-07-02 08:25:55,017: INFO/MainProcess] Received task: keyword_ideas.tasks.get_keyword_seo_metrics[b8f93e47-55ab-453a-9778-e6e4f47fa0dc]
+[2015-07-02 08:25:55,026: WARNING/Worker-2] Getting Google top 10 for key holder
+[2015-07-02 08:25:55,034: INFO/Worker-2] Starting new HTTPS connection (1): www.google.co.uk
+/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/requests/packages/urllib3/connectionpool.py:730: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.org/en/latest/security.html (This warning will only appear once by default.)
+  InsecureRequestWarning)
+
+[2015-07-02 08:25:55,146: WARNING/Worker-2] /home/pob/Documents/playground/env/local/lib/python2.7/site-packages/requests/packages/urllib3/connectionpool.py:730: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.org/en/latest/security.html (This warning will only appear once by default.)
+  InsecureRequestWarning)
+
+[2015-07-02 08:25:55,950: WARNING/Worker-2] Getting SEO metrics from Moz for key holder
+[2015-07-02 08:25:55,950: WARNING/Worker-2] CREDENTIALS:
+[2015-07-02 08:25:55,951: WARNING/Worker-2] None
+[2015-07-02 08:25:55,951: WARNING/Worker-2] None
+[2015-07-02 08:25:55,952: ERROR/MainProcess] Task keyword_ideas.tasks.get_keyword_seo_metrics[b8f93e47-55ab-453a-9778-e6e4f47fa0dc] raised unexpected: TypeError("object of type 'NoneType' has no len()",)
+Traceback (most recent call last):
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/app/trace.py", line 240, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/app/trace.py", line 438, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/tasks.py", line 19, in get_keyword_seo_metrics
+    metrics = get_metrics(urls)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/mozapi.py", line 211, in get_metrics
+    metrics = l.urlMetrics(urls)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/mozapi.py", line 186, in urlMetrics
+    return self.query('url-metrics', data=json.dumps(urls), Cols=cols)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/mozapi.py", line 169, in query
+    params['Signature'] = self.signature(expires)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/mozapi.py", line 163, in signature
+    return base64.b64encode(hmac.new(self.secret_key, toSign, hashlib.sha1).digest())
+  File "/usr/lib/python2.7/hmac.py", line 133, in new
+    return HMAC(key, msg, digestmod)
+  File "/usr/lib/python2.7/hmac.py", line 68, in __init__
+    if len(key) > blocksize:
+TypeError: object of type 'NoneType' has no len()
+
+worker: Warm shutdown (MainProcess)
+ 
+ -------------- celery@monkeytown v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-3.13.0-53-generic-i686-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         gaptooth:0xb6f32f8c
+- ** ---------- .> transport:   django://localhost//
+- ** ---------- .> results:     disabled
+- *** --- * --- .> concurrency: 4 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . gaptooth.celery.debug_task
+  . keyword_ideas.tasks.get_keyword_seo_metrics
+  . keyword_ideas.tasks.get_seed_keyword_ideas
+
+[2015-07-02 08:35:48,970: INFO/MainProcess] Connected to django://localhost//
+/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2015-07-02 08:35:48,984: WARNING/MainProcess] /home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2015-07-02 08:35:48,984: WARNING/MainProcess] celery@monkeytown ready.
+[2015-07-02 08:36:19,070: INFO/MainProcess] Received task: keyword_ideas.tasks.get_keyword_seo_metrics[f209c0ae-0bdc-419d-8716-8f2fd23a9a4a]
+[2015-07-02 08:36:19,078: WARNING/Worker-1] Getting Google top 10 for key holder
+[2015-07-02 08:36:19,086: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/requests/packages/urllib3/connectionpool.py:730: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.org/en/latest/security.html (This warning will only appear once by default.)
+  InsecureRequestWarning)
+
+[2015-07-02 08:36:19,227: WARNING/Worker-1] /home/pob/Documents/playground/env/local/lib/python2.7/site-packages/requests/packages/urllib3/connectionpool.py:730: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.org/en/latest/security.html (This warning will only appear once by default.)
+  InsecureRequestWarning)
+
+[2015-07-02 08:36:20,225: WARNING/Worker-1] Getting SEO metrics from Moz for key holder
+[2015-07-02 08:36:20,226: WARNING/Worker-1] CREDENTIALS:
+[2015-07-02 08:36:20,226: WARNING/Worker-1] None
+[2015-07-02 08:36:20,226: WARNING/Worker-1] None
+[2015-07-02 08:36:20,228: ERROR/MainProcess] Task keyword_ideas.tasks.get_keyword_seo_metrics[f209c0ae-0bdc-419d-8716-8f2fd23a9a4a] raised unexpected: TypeError("object of type 'NoneType' has no len()",)
+Traceback (most recent call last):
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/app/trace.py", line 240, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/app/trace.py", line 438, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/tasks.py", line 19, in get_keyword_seo_metrics
+    metrics = get_metrics(urls)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/mozapi.py", line 211, in get_metrics
+    metrics = l.urlMetrics(urls)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/mozapi.py", line 186, in urlMetrics
+    return self.query('url-metrics', data=json.dumps(urls), Cols=cols)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/mozapi.py", line 169, in query
+    params['Signature'] = self.signature(expires)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/mozapi.py", line 163, in signature
+    return base64.b64encode(hmac.new(self.secret_key, toSign, hashlib.sha1).digest())
+  File "/usr/lib/python2.7/hmac.py", line 133, in new
+    return HMAC(key, msg, digestmod)
+  File "/usr/lib/python2.7/hmac.py", line 68, in __init__
+    if len(key) > blocksize:
+TypeError: object of type 'NoneType' has no len()
+
+worker: Warm shutdown (MainProcess)
+ 
+ -------------- celery@monkeytown v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-3.13.0-53-generic-i686-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         gaptooth:0xb6f85f8c
+- ** ---------- .> transport:   django://localhost//
+- ** ---------- .> results:     disabled
+- *** --- * --- .> concurrency: 4 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . gaptooth.celery.debug_task
+  . keyword_ideas.tasks.get_keyword_seo_metrics
+  . keyword_ideas.tasks.get_seed_keyword_ideas
+
+[2015-07-02 08:49:03,338: INFO/MainProcess] Connected to django://localhost//
+/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2015-07-02 08:49:03,349: WARNING/MainProcess] /home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2015-07-02 08:49:03,349: WARNING/MainProcess] celery@monkeytown ready.
+[2015-07-02 08:49:53,467: INFO/MainProcess] Received task: keyword_ideas.tasks.get_keyword_seo_metrics[7f6d818d-16fa-4667-b616-34b1cf8e3afc]
+[2015-07-02 08:49:53,473: WARNING/Worker-1] Getting Google top 10 for key holder
+[2015-07-02 08:49:53,480: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/requests/packages/urllib3/connectionpool.py:730: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.org/en/latest/security.html (This warning will only appear once by default.)
+  InsecureRequestWarning)
+
+[2015-07-02 08:49:53,708: WARNING/Worker-1] /home/pob/Documents/playground/env/local/lib/python2.7/site-packages/requests/packages/urllib3/connectionpool.py:730: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.org/en/latest/security.html (This warning will only appear once by default.)
+  InsecureRequestWarning)
+
+[2015-07-02 08:49:54,655: WARNING/Worker-1] Getting SEO metrics from Moz for key holder
+[2015-07-02 08:49:54,656: WARNING/Worker-1] CREDENTIALS:
+[2015-07-02 08:49:54,656: WARNING/Worker-1] None
+[2015-07-02 08:49:54,656: WARNING/Worker-1] e0a4f2a5b47658c2bcdf19449fc82675
+[2015-07-02 08:49:55,153: ERROR/MainProcess] Task keyword_ideas.tasks.get_keyword_seo_metrics[7f6d818d-16fa-4667-b616-34b1cf8e3afc] raised unexpected: lsapiException()
+Traceback (most recent call last):
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/app/trace.py", line 240, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/app/trace.py", line 438, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/tasks.py", line 19, in get_keyword_seo_metrics
+    metrics = get_metrics(urls)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/mozapi.py", line 211, in get_metrics
+    metrics = l.urlMetrics(urls)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/mozapi.py", line 186, in urlMetrics
+    return self.query('url-metrics', data=json.dumps(urls), Cols=cols)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/mozapi.py", line 176, in query
+    raise lsapiException(e.read())
+lsapiException
+
+worker: Warm shutdown (MainProcess)
+ 
+ -------------- celery@monkeytown v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-3.13.0-53-generic-i686-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         gaptooth:0xb6f60f8c
+- ** ---------- .> transport:   django://localhost//
+- ** ---------- .> results:     disabled
+- *** --- * --- .> concurrency: 4 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . gaptooth.celery.debug_task
+  . keyword_ideas.tasks.get_keyword_seo_metrics
+  . keyword_ideas.tasks.get_seed_keyword_ideas
+
+[2015-07-02 08:50:56,330: INFO/MainProcess] Connected to django://localhost//
+/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2015-07-02 08:50:56,341: WARNING/MainProcess] /home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2015-07-02 08:50:56,341: WARNING/MainProcess] celery@monkeytown ready.
+[2015-07-02 08:51:26,443: INFO/MainProcess] Received task: keyword_ideas.tasks.get_keyword_seo_metrics[4268fc44-e2a3-480e-803a-aed13587ea2b]
+[2015-07-02 08:51:26,454: WARNING/Worker-1] Getting Google top 10 for key holder
+[2015-07-02 08:51:26,462: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/requests/packages/urllib3/connectionpool.py:730: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.org/en/latest/security.html (This warning will only appear once by default.)
+  InsecureRequestWarning)
+
+[2015-07-02 08:51:26,891: WARNING/Worker-1] /home/pob/Documents/playground/env/local/lib/python2.7/site-packages/requests/packages/urllib3/connectionpool.py:730: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.org/en/latest/security.html (This warning will only appear once by default.)
+  InsecureRequestWarning)
+
+[2015-07-02 08:51:28,700: WARNING/Worker-1] Getting SEO metrics from Moz for key holder
+[2015-07-02 08:51:28,700: WARNING/Worker-1] ['http://www.ebay.co.uk/bhp/key-holder', 'https://www.etsy.com/uk/market/key_holder', 'http://www.notonthehighstreet.com/thabto/product/buckle-up-wall-mounted-key-holder', 'http://www.notonthehighstreet.com/q/key-holder-for-wall', 'http://www.oxforddictionaries.com/definition/english/keyholder', 'http://www.amazon.co.uk/MAGNETIC-KEY-HOLDER-BOX-FREE/dp/B0050BM4XK', 'http://www.amazon.co.uk/Hers-Holders-H11cm-W8cm-D2-5cm/dp/B000T2KCTI', 'http://www.ebay.com/bhp/key-holder', 'http://www.livelaughlove.co.uk/Wall-Hooks/', 'http://www.suck.uk.com/products/cloud-keyholder/']
+[2015-07-02 08:51:29,185: ERROR/MainProcess] Task keyword_ideas.tasks.get_keyword_seo_metrics[4268fc44-e2a3-480e-803a-aed13587ea2b] raised unexpected: lsapiException()
+Traceback (most recent call last):
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/app/trace.py", line 240, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/app/trace.py", line 438, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/tasks.py", line 19, in get_keyword_seo_metrics
+    metrics = get_metrics(urls)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/mozapi.py", line 210, in get_metrics
+    metrics = l.urlMetrics(urls)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/mozapi.py", line 186, in urlMetrics
+    return self.query('url-metrics', data=json.dumps(urls), Cols=cols)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/mozapi.py", line 176, in query
+    raise lsapiException(e.read())
+lsapiException
+[2015-07-02 08:59:57,633: INFO/MainProcess] Received task: keyword_ideas.tasks.get_keyword_seo_metrics[38d35aee-268f-4e6b-a2a3-b149a20c1067]
+[2015-07-02 08:59:57,642: WARNING/Worker-2] Getting Google top 10 for key holder
+[2015-07-02 08:59:57,652: INFO/Worker-2] Starting new HTTPS connection (1): www.google.co.uk
+/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/requests/packages/urllib3/connectionpool.py:730: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.org/en/latest/security.html (This warning will only appear once by default.)
+  InsecureRequestWarning)
+
+[2015-07-02 08:59:57,769: WARNING/Worker-2] /home/pob/Documents/playground/env/local/lib/python2.7/site-packages/requests/packages/urllib3/connectionpool.py:730: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.org/en/latest/security.html (This warning will only appear once by default.)
+  InsecureRequestWarning)
+
+[2015-07-02 08:59:58,653: WARNING/Worker-2] Getting SEO metrics from Moz for key holder
+[2015-07-02 08:59:58,653: WARNING/Worker-2] ['http://www.ebay.co.uk/bhp/key-holder', 'https://www.etsy.com/uk/market/key_holder', 'http://www.notonthehighstreet.com/thabto/product/buckle-up-wall-mounted-key-holder', 'http://www.notonthehighstreet.com/q/key-holder-for-wall', 'http://www.oxforddictionaries.com/definition/english/keyholder', 'http://www.amazon.co.uk/MAGNETIC-KEY-HOLDER-BOX-FREE/dp/B0050BM4XK', 'http://www.amazon.co.uk/Hers-Holders-H11cm-W8cm-D2-5cm/dp/B000T2KCTI', 'http://www.ebay.com/bhp/key-holder', 'http://www.livelaughlove.co.uk/Wall-Hooks/', 'http://www.suck.uk.com/products/cloud-keyholder/']
+[2015-07-02 08:59:59,276: ERROR/MainProcess] Task keyword_ideas.tasks.get_keyword_seo_metrics[38d35aee-268f-4e6b-a2a3-b149a20c1067] raised unexpected: lsapiException()
+Traceback (most recent call last):
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/app/trace.py", line 240, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/app/trace.py", line 438, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/tasks.py", line 19, in get_keyword_seo_metrics
+    try:
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/mozapi.py", line 210, in get_metrics
+    print urls
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/mozapi.py", line 186, in urlMetrics
+    print urls
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/mozapi.py", line 176, in query
+    raise lsapiException(e.read())
+lsapiException
+[2015-07-02 09:01:27,877: INFO/MainProcess] Received task: keyword_ideas.tasks.get_keyword_seo_metrics[37ef2b93-3ebc-4364-877c-0bf4fc04dbd8]
+[2015-07-02 09:01:27,886: WARNING/Worker-4] Getting Google top 10 for key holder
+[2015-07-02 09:01:27,894: INFO/Worker-4] Starting new HTTPS connection (1): www.google.co.uk
+[2015-07-02 09:01:37,936: ERROR/MainProcess] Task keyword_ideas.tasks.get_keyword_seo_metrics[37ef2b93-3ebc-4364-877c-0bf4fc04dbd8] raised unexpected: ConnectionError(ProtocolError('Connection aborted.', gaierror(-2, 'Name or service not known')),)
+Traceback (most recent call last):
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/app/trace.py", line 240, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/app/trace.py", line 438, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/tasks.py", line 17, in get_keyword_seo_metrics
+    urls = get_google_top_10(keyword.phrase)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/functions.py", line 9, in get_google_top_10
+    results = spider.crawl()
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/googlespider.py", line 108, in crawl
+    response = requests.get(url, headers=headers, proxies=proxies, verify=False)
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/requests/api.py", line 60, in get
+    return request('get', url, **kwargs)
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/requests/api.py", line 49, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/requests/sessions.py", line 457, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/requests/sessions.py", line 569, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/requests/adapters.py", line 407, in send
+    raise ConnectionError(err, request=request)
+ConnectionError: ('Connection aborted.', gaierror(-2, 'Name or service not known'))
+[2015-07-02 09:05:03,413: INFO/MainProcess] Received task: keyword_ideas.tasks.get_keyword_seo_metrics[f15c6c59-54d7-4643-834e-85a844bfb9d8]
+[2015-07-02 09:05:03,424: WARNING/Worker-3] Getting Google top 10 for key holder
+[2015-07-02 09:05:03,432: INFO/Worker-3] Starting new HTTPS connection (1): www.google.co.uk
+/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/requests/packages/urllib3/connectionpool.py:730: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.org/en/latest/security.html (This warning will only appear once by default.)
+  InsecureRequestWarning)
+
+[2015-07-02 09:05:03,632: WARNING/Worker-3] /home/pob/Documents/playground/env/local/lib/python2.7/site-packages/requests/packages/urllib3/connectionpool.py:730: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.org/en/latest/security.html (This warning will only appear once by default.)
+  InsecureRequestWarning)
+
+[2015-07-02 09:05:05,505: WARNING/Worker-3] Getting SEO metrics from Moz for key holder
+[2015-07-02 09:05:05,505: WARNING/Worker-3] ['http://www.ebay.co.uk/bhp/key-holder', 'https://www.etsy.com/uk/market/key_holder', 'http://www.notonthehighstreet.com/thabto/product/buckle-up-wall-mounted-key-holder', 'http://www.notonthehighstreet.com/q/key-holder-for-wall', 'http://www.oxforddictionaries.com/definition/english/keyholder', 'http://www.amazon.co.uk/MAGNETIC-KEY-HOLDER-BOX-FREE/dp/B0050BM4XK', 'http://www.amazon.co.uk/Hers-Holders-H11cm-W8cm-D2-5cm/dp/B000T2KCTI', 'http://www.ebay.com/bhp/key-holder', 'http://www.livelaughlove.co.uk/Wall-Hooks/', 'http://www.suck.uk.com/products/cloud-keyholder/']
+[2015-07-02 09:05:09,275: ERROR/MainProcess] Task keyword_ideas.tasks.get_keyword_seo_metrics[f15c6c59-54d7-4643-834e-85a844bfb9d8] raised unexpected: lsapiException()
+Traceback (most recent call last):
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/app/trace.py", line 240, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/app/trace.py", line 438, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/tasks.py", line 19, in get_keyword_seo_metrics
+    try:
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/mozapi.py", line 210, in get_metrics
+    l = lsapi(access_id, secret_key)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/mozapi.py", line 186, in urlMetrics
+    else:
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/mozapi.py", line 176, in query
+    raise lsapiException(e.read())
+lsapiException
+[2015-07-02 09:07:23,798: INFO/MainProcess] Received task: keyword_ideas.tasks.get_keyword_seo_metrics[75407cf0-5cd3-48a8-a5ca-d243422e1f6b]
+[2015-07-02 09:07:23,802: WARNING/Worker-1] Getting Google top 10 for key holder
+[2015-07-02 09:07:23,805: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+[2015-07-02 09:07:24,924: WARNING/Worker-1] Getting SEO metrics from Moz for key holder
+[2015-07-02 09:07:24,924: WARNING/Worker-1] ['http://www.ebay.co.uk/bhp/key-holder', 'https://www.etsy.com/uk/market/key_holder', 'http://www.notonthehighstreet.com/thabto/product/buckle-up-wall-mounted-key-holder', 'http://www.notonthehighstreet.com/q/key-holder-for-wall', 'http://www.oxforddictionaries.com/definition/english/keyholder', 'http://www.amazon.co.uk/MAGNETIC-KEY-HOLDER-BOX-FREE/dp/B0050BM4XK', 'http://www.amazon.co.uk/Hers-Holders-H11cm-W8cm-D2-5cm/dp/B000T2KCTI', 'http://www.ebay.com/bhp/key-holder', 'http://www.livelaughlove.co.uk/Wall-Hooks/', 'http://www.suck.uk.com/products/cloud-keyholder/']
+[2015-07-02 09:07:25,361: ERROR/MainProcess] Task keyword_ideas.tasks.get_keyword_seo_metrics[75407cf0-5cd3-48a8-a5ca-d243422e1f6b] raised unexpected: lsapiException()
+Traceback (most recent call last):
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/app/trace.py", line 240, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/app/trace.py", line 438, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/tasks.py", line 19, in get_keyword_seo_metrics
+    try:
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/mozapi.py", line 210, in get_metrics
+    l = lsapi(access_id, secret_key)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/mozapi.py", line 186, in urlMetrics
+    else:
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/mozapi.py", line 176, in query
+    print e.reason
+lsapiException
+[2015-07-10 18:30:51,817: INFO/MainProcess] Connected to django://localhost//
+/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2015-07-10 18:30:51,832: WARNING/MainProcess] /home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2015-07-10 18:30:51,832: WARNING/MainProcess] celery@monkeytown ready.
+[2015-07-13 08:49:29,924: INFO/MainProcess] Connected to django://localhost//
+/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2015-07-13 08:49:29,940: WARNING/MainProcess] /home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2015-07-13 08:49:29,940: WARNING/MainProcess] celery@monkeytown ready.
+[2015-07-13 14:39:11,500: INFO/MainProcess] Received task: keyword_ideas.tasks.get_keyword_seo_metrics[50ab9060-ace8-41a9-a041-80bcd2ebcea1]
+[2015-07-13 14:39:11,515: WARNING/Worker-3] Getting Google top 10 for key chain
+[2015-07-13 14:39:11,516: WARNING/Worker-3] https://www.google.co.uk/search?gl=gb&q=key+chain&start=0&num=100
+[2015-07-13 14:39:11,528: INFO/Worker-3] Starting new HTTPS connection (1): www.google.co.uk
+/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/requests/packages/urllib3/connectionpool.py:730: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.org/en/latest/security.html (This warning will only appear once by default.)
+  InsecureRequestWarning)
+
+[2015-07-13 14:39:11,651: WARNING/Worker-3] /home/pob/Documents/playground/env/local/lib/python2.7/site-packages/requests/packages/urllib3/connectionpool.py:730: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.org/en/latest/security.html (This warning will only appear once by default.)
+  InsecureRequestWarning)
+
+[2015-07-13 14:39:12,916: WARNING/Worker-3] Getting SEO metrics from Moz for key chain
+[2015-07-13 14:39:12,917: WARNING/Worker-3] ['https://en.wikipedia.org/wiki/Keychain_(software)', 'https://support.apple.com/en-gb/HT204085', 'https://www.apple.com/uk/support/icloud/keychain/', 'http://www.macworld.com/article/2058081/how-to-use-icloud-keychain.html', 'http://www.imore.com/icloud-keychain-ultimate-guide', 'http://developer.android.com/reference/android/security/KeyChain.html', 'http://www.umkc.edu/is/support/services/macintosh/keychain.asp', 'https://www.etsy.com/market/keychain', 'http://www.zazzle.com/keychains', 'http://www.funtoo.org/Keychain']
+[2015-07-13 14:39:12,917: WARNING/Worker-3] ['https://en.wikipedia.org/wiki/Keychain_(software)', 'https://support.apple.com/en-gb/HT204085', 'https://www.apple.com/uk/support/icloud/keychain/', 'http://www.macworld.com/article/2058081/how-to-use-icloud-keychain.html', 'http://www.imore.com/icloud-keychain-ultimate-guide', 'http://developer.android.com/reference/android/security/KeyChain.html', 'http://www.umkc.edu/is/support/services/macintosh/keychain.asp', 'https://www.etsy.com/market/keychain', 'http://www.zazzle.com/keychains', 'http://www.funtoo.org/Keychain']
+[2015-07-13 14:39:13,330: WARNING/Worker-3] Your authentication failed. Check your authentication details and try again. For more information on signed authentication, see: http://apiwiki.moz.com/signed-authentication
+[2015-07-13 14:39:13,350: WARNING/Worker-3] >
+[2015-07-13 14:39:13,351: WARNING/Worker-3] /home/pob/Documents/playground/gaptooth/keyword_ideas/tasks.py(25)get_keyword_seo_metrics()
+-> page_authorities = [m['upa'] for m in metrics]
+[2015-07-13 14:39:13,351: WARNING/Worker-3] (Pdb)
+[2015-07-13 14:39:13,355: ERROR/MainProcess] Task keyword_ideas.tasks.get_keyword_seo_metrics[50ab9060-ace8-41a9-a041-80bcd2ebcea1] raised unexpected: BdbQuit()
+Traceback (most recent call last):
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/app/trace.py", line 240, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/app/trace.py", line 438, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/tasks.py", line 25, in get_keyword_seo_metrics
+    page_authorities = [m['upa'] for m in metrics]
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/tasks.py", line 25, in get_keyword_seo_metrics
+    page_authorities = [m['upa'] for m in metrics]
+  File "/usr/lib/python2.7/bdb.py", line 49, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python2.7/bdb.py", line 68, in dispatch_line
+    if self.quitting: raise BdbQuit
+BdbQuit
+[2015-07-13 14:40:26,684: INFO/MainProcess] Received task: keyword_ideas.tasks.get_keyword_seo_metrics[e6637717-68c0-408f-a79a-144c23b823aa]
+[2015-07-13 14:40:26,690: WARNING/Worker-2] Getting Google top 10 for key holder
+[2015-07-13 14:40:26,691: WARNING/Worker-2] https://www.google.co.uk/search?gl=gb&q=key+holder&start=0&num=100
+[2015-07-13 14:40:26,700: INFO/Worker-2] Starting new HTTPS connection (1): www.google.co.uk
+/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/requests/packages/urllib3/connectionpool.py:730: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.org/en/latest/security.html (This warning will only appear once by default.)
+  InsecureRequestWarning)
+
+[2015-07-13 14:40:27,055: WARNING/Worker-2] /home/pob/Documents/playground/env/local/lib/python2.7/site-packages/requests/packages/urllib3/connectionpool.py:730: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.org/en/latest/security.html (This warning will only appear once by default.)
+  InsecureRequestWarning)
+
+[2015-07-13 14:40:28,177: WARNING/Worker-2] Getting SEO metrics from Moz for key holder
+[2015-07-13 14:40:28,177: WARNING/Worker-2] ['http://www.ebay.co.uk/bhp/key-holder', 'https://www.etsy.com/uk/market/key_holder', 'http://www.notonthehighstreet.com/thabto/product/buckle-up-wall-mounted-key-holder', 'http://www.notonthehighstreet.com/q/key-holder-for-wall', 'http://www.amazon.co.uk/MAGNETIC-KEY-HOLDER-BOX-FREE/dp/B0050BM4XK', 'http://www.amazon.co.uk/Hers-Holders-H11cm-W8cm-D2-5cm/dp/B000T2KCTI', 'http://www.livelaughlove.co.uk/Wall-Hooks/', 'http://www.ebay.com/bhp/key-holder', 'http://www.suck.uk.com/products/animal-keyholder/', 'http://getkeysmart.com/']
+[2015-07-13 14:40:28,177: WARNING/Worker-2] ['http://www.ebay.co.uk/bhp/key-holder', 'https://www.etsy.com/uk/market/key_holder', 'http://www.notonthehighstreet.com/thabto/product/buckle-up-wall-mounted-key-holder', 'http://www.notonthehighstreet.com/q/key-holder-for-wall', 'http://www.amazon.co.uk/MAGNETIC-KEY-HOLDER-BOX-FREE/dp/B0050BM4XK', 'http://www.amazon.co.uk/Hers-Holders-H11cm-W8cm-D2-5cm/dp/B000T2KCTI', 'http://www.livelaughlove.co.uk/Wall-Hooks/', 'http://www.ebay.com/bhp/key-holder', 'http://www.suck.uk.com/products/animal-keyholder/', 'http://getkeysmart.com/']
+[2015-07-13 14:40:28,594: WARNING/Worker-2] Your authentication failed. Check your authentication details and try again. For more information on signed authentication, see: http://apiwiki.moz.com/signed-authentication
+[2015-07-13 14:40:28,614: WARNING/Worker-2] >
+[2015-07-13 14:40:28,614: WARNING/Worker-2] /home/pob/Documents/playground/gaptooth/keyword_ideas/tasks.py(25)get_keyword_seo_metrics()
+-> print metrics
+[2015-07-13 14:40:28,614: WARNING/Worker-2] (Pdb)
+[2015-07-13 14:40:28,615: ERROR/MainProcess] Task keyword_ideas.tasks.get_keyword_seo_metrics[e6637717-68c0-408f-a79a-144c23b823aa] raised unexpected: BdbQuit()
+Traceback (most recent call last):
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/app/trace.py", line 240, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/app/trace.py", line 438, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/tasks.py", line 25, in get_keyword_seo_metrics
+    print metrics
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/tasks.py", line 25, in get_keyword_seo_metrics
+    print metrics
+  File "/usr/lib/python2.7/bdb.py", line 49, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python2.7/bdb.py", line 68, in dispatch_line
+    if self.quitting: raise BdbQuit
+BdbQuit
+
+worker: Warm shutdown (MainProcess)
+ 
+ -------------- celery@monkeytown v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-3.13.0-53-generic-i686-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         gaptooth:0xb6f0ff8c
+- ** ---------- .> transport:   django://localhost//
+- ** ---------- .> results:     disabled
+- *** --- * --- .> concurrency: 4 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . gaptooth.celery.debug_task
+  . keyword_ideas.tasks.get_keyword_seo_metrics
+  . keyword_ideas.tasks.get_seed_keyword_ideas
+
+[2015-07-13 14:53:11,756: INFO/MainProcess] Connected to django://localhost//
+/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2015-07-13 14:53:11,767: WARNING/MainProcess] /home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2015-07-13 14:53:11,767: WARNING/MainProcess] celery@monkeytown ready.
+[2015-07-13 14:53:36,829: INFO/MainProcess] Received task: keyword_ideas.tasks.get_keyword_seo_metrics[3ba5acec-5ef6-46ee-93ac-6164b0ef1562]
+[2015-07-13 14:53:36,838: WARNING/Worker-1] [<Keyword: key holder>]
+[2015-07-13 14:53:36,839: WARNING/Worker-1] Getting Google top 10 for key holder
+[2015-07-13 14:53:36,839: WARNING/Worker-1] https://www.google.co.uk/search?gl=gb&q=key+holder&start=0&num=100
+[2015-07-13 14:53:36,846: INFO/Worker-1] Starting new HTTPS connection (1): www.google.co.uk
+/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/requests/packages/urllib3/connectionpool.py:730: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.org/en/latest/security.html (This warning will only appear once by default.)
+  InsecureRequestWarning)
+
+[2015-07-13 14:53:37,132: WARNING/Worker-1] /home/pob/Documents/playground/env/local/lib/python2.7/site-packages/requests/packages/urllib3/connectionpool.py:730: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.org/en/latest/security.html (This warning will only appear once by default.)
+  InsecureRequestWarning)
+
+[2015-07-13 14:53:38,027: WARNING/Worker-1] Getting SEO metrics from Moz for key holder
+[2015-07-13 14:53:38,027: WARNING/Worker-1] ['http://www.ebay.co.uk/bhp/key-holder', 'https://www.etsy.com/uk/market/key_holder', 'http://www.notonthehighstreet.com/thabto/product/buckle-up-wall-mounted-key-holder', 'http://www.notonthehighstreet.com/q/key-holder-for-wall', 'http://www.amazon.co.uk/MAGNETIC-KEY-HOLDER-BOX-FREE/dp/B0050BM4XK', 'http://www.amazon.co.uk/Hers-Holders-H11cm-W8cm-D2-5cm/dp/B000T2KCTI', 'http://www.livelaughlove.co.uk/Wall-Hooks/', 'http://www.ebay.com/bhp/key-holder', 'http://www.suck.uk.com/products/animal-keyholder/', 'http://getkeysmart.com/']
+[2015-07-13 14:53:38,027: WARNING/Worker-1] ['http://www.ebay.co.uk/bhp/key-holder', 'https://www.etsy.com/uk/market/key_holder', 'http://www.notonthehighstreet.com/thabto/product/buckle-up-wall-mounted-key-holder', 'http://www.notonthehighstreet.com/q/key-holder-for-wall', 'http://www.amazon.co.uk/MAGNETIC-KEY-HOLDER-BOX-FREE/dp/B0050BM4XK', 'http://www.amazon.co.uk/Hers-Holders-H11cm-W8cm-D2-5cm/dp/B000T2KCTI', 'http://www.livelaughlove.co.uk/Wall-Hooks/', 'http://www.ebay.com/bhp/key-holder', 'http://www.suck.uk.com/products/animal-keyholder/', 'http://getkeysmart.com/']
+[2015-07-13 14:53:38,749: WARNING/Worker-1] Your authentication failed. Check your authentication details and try again. For more information on signed authentication, see: http://apiwiki.moz.com/signed-authentication
+[2015-07-13 14:53:38,754: ERROR/MainProcess] Task keyword_ideas.tasks.get_keyword_seo_metrics[3ba5acec-5ef6-46ee-93ac-6164b0ef1562] raised unexpected: lsapiException()
+Traceback (most recent call last):
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/app/trace.py", line 240, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/pob/Documents/playground/env/local/lib/python2.7/site-packages/celery/app/trace.py", line 438, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/tasks.py", line 20, in get_keyword_seo_metrics
+    metrics = get_metrics(urls)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/mozapi.py", line 212, in get_metrics
+    metrics = l.urlMetrics(urls)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/mozapi.py", line 188, in urlMetrics
+    return self.query('url-metrics', data=json.dumps(urls), Cols=cols)
+  File "/home/pob/Documents/playground/gaptooth/keyword_ideas/mozapi.py", line 177, in query
+    raise lsapiException(e.read())
+lsapiException

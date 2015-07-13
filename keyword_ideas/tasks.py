@@ -12,11 +12,14 @@ import numpy as np
 def get_keyword_seo_metrics(keyword_list):
     count = 0 
     keywords = Keyword.objects.filter(phrase__in=keyword_list)
+    print keywords
     for keyword in keywords:
         print 'Getting Google top 10 for %s' % keyword.phrase
         urls = get_google_top_10(keyword.phrase)
         print 'Getting SEO metrics from Moz for %s' % keyword.phrase
         metrics = get_metrics(urls)  
+
+        print metrics
         # Extract metric into lists
         page_authorities = [m['upa'] for m in metrics]
         domain_authorities = [m['pda'] for m in metrics]

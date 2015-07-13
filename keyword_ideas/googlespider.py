@@ -105,6 +105,7 @@ class GoogleSpider():
                 #'DNT': '1'
             }   
             #print 'Requesting %s' % url
+            print url
             response = requests.get(url, headers=headers, proxies=proxies, verify=False)
             if response.status_code == 503:
                 print 'Failed to access %s' % url 

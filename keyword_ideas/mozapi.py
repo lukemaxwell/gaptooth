@@ -173,6 +173,7 @@ class lsapi:
                 except urllib2.HTTPError as e:
                         # The unauthorized status code can sometimes have meaningful data
                         if e.code == 401:
+                                print e.reason
                                 raise lsapiException(e.read())
                         else:
                                 raise lsapiException(e)
@@ -183,6 +184,7 @@ class lsapi:
                 if isinstance(urls, basestring):
                         return self.query('url-metrics/%s' % urllib.quote(urls), Cols=cols)
                 else:
+                        print urls
                         return self.query('url-metrics', data=json.dumps(urls), Cols=cols)
         
         def anchorText(self, url, scope='phrase_to_page', sort='domains_linking_page', cols=ATCols.freeCols):
@@ -206,6 +208,7 @@ def get_metrics(urls):
     access_id =  os.environ.get('MOZ_ACCESS_ID')
     secret_key =  os.environ.get('MOZ_SECRET_KEY')
     l = lsapi(access_id, secret_key)
+    print urls
     metrics = l.urlMetrics(urls)
     #metrics = l.urlMetrics(urls, cols=(lsapi.UMCols.pageAuthority | lsapi.UMCols.domainAuthority | lsapi.UMCols.externalLinks))
     return metrics
